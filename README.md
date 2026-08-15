@@ -37,8 +37,10 @@ parchment. All tokens live in `:root` at the top of `assets/css/styles.css`.
 - **Pastel taxonomy** — each content category keeps its own tint across every page:
   Mint = matching, Lime = managed delivery, Lavender = payments and testimonials,
   Blush = quality, Sage = clients, Buttercream = warm accents.
-- **Type** — DM Sans (substituting Matter) at 400/500 only, tight tracking on display sizes,
-  0.08em tracking on 11px uppercase labels.
+- **Type** — Google Sans at 400/500 only, tight tracking on display sizes, 0.08em tracking on
+  11px uppercase labels. Google Sans is proprietary and cannot be served as a webfont, so
+  `--font-sans` names it first (used wherever a visitor has it installed, including Product
+  Sans) and loads **Outfit** from Google Fonts as the fallback everyone else sees.
 - **Rhythm** — every section opens badge → heading → description.
 
 ## Brand assets

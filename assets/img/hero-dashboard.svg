@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Visio project delivery workspace showing milestones, project manager and delivery health">
   <defs>
     <style>
-      .t { font-family: 'DM Sans','Inter',system-ui,sans-serif; }
+      .t { font-family: 'Google Sans','Outfit',system-ui,sans-serif; }
       .m { font-weight: 500; }
       .ink { fill: #001f1f; }
       .gray { fill: #5c7070; }

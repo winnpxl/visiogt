@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Project brief form with goals, timeline and budget">
-  <defs><style>.t{font-family:'DM Sans','Inter',system-ui,sans-serif}.m{font-weight:500}</style></defs>
+  <defs><style>.t{font-family:'Google Sans','Outfit',system-ui,sans-serif}.m{font-weight:500}</style></defs>
   <rect width="640" height="400" rx="12" fill="#ffffff"/>
 
   <text class="t m" x="32" y="46" font-size="17" fill="#001f1f" letter-spacing="-0.3">Start a project</text>
