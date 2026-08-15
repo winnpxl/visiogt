@@ -253,30 +253,29 @@ h1, h2, h3, h4, p { margin: 0; }
 .pill {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   background: var(--color-meadow);
   color: var(--color-forest-ink);
-  border: 1px solid var(--color-forest-ink);
+  border: 0;
   border-radius: var(--radius-badges);
-  padding: 7px 8px 7px 14px;
+  padding: 9px 15px;
   font-size: 13px;
   font-weight: var(--font-weight-medium);
   letter-spacing: 0.02em;
   line-height: 1;
 }
 
-.pill__dot {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: var(--color-forest-ink);
-  color: var(--color-meadow);
-  display: grid;
-  place-items: center;
-  font-size: 10px;
-  transition: transform 0.4s var(--ease-out);
+/* Four-point sparkle lifted from the logo mark. Ordered first so it leads
+   the label, without needing the icon to move in the markup. */
+.pill__spark {
+  order: -1;
+  width: 11px;
+  height: 11px;
+  flex: none;
+  fill: var(--color-brand-action);
+  transition: transform 0.5s var(--ease-out);
 }
-a.pill:hover .pill__dot { transform: translateX(2px) rotate(-45deg); }
+a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 
 .pill--quiet { background: var(--color-mint-surface); }
 .pill--lime { background: var(--color-lime-surface); }
@@ -889,12 +888,7 @@ a.pill:hover .pill__dot { transform: translateX(2px) rotate(-45deg); }
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5), transparent 64%);
   pointer-events: none;
 }
-.closer .pill {
-  background: #fff;
-  border-color: var(--color-forest-ink);
-  position: relative;
-  z-index: 1;
-}
+.closer .pill { background: #fff; position: relative; z-index: 1; }
 .closer__title {
   font-size: clamp(30px, 4.4vw, var(--text-heading));
   font-weight: var(--font-weight-medium);
