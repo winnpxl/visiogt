@@ -21,10 +21,14 @@
     <rect x="0" y="0" width="236" height="760" fill="#f7f6f2"/>
     <line x1="236" y1="0" x2="236" y2="760" stroke="#001f1f" stroke-opacity="0.08"/>
 
+    <!-- Visio mark, scaled from logo-mark.svg (48x45) to 22px tall -->
     <g transform="translate(28 30)">
-      <circle cx="11" cy="11" r="11" fill="#001f1f"/>
-      <circle cx="11" cy="11" r="4" fill="#cdface"/>
-      <text class="t m" x="32" y="16" font-size="16" fill="#003d3d" letter-spacing="-0.4">Visio</text>
+      <g transform="scale(0.4889)">
+        <path d="M33.7382 37.7958C34.1107 39.5305 35.4658 40.8856 37.2006 41.2582C35.4658 41.6307 34.1107 42.9858 33.7382 44.7206C33.3656 42.9858 32.0105 41.6307 30.2758 41.2582C32.0105 40.8856 33.3656 39.5305 33.7382 37.7958Z" fill="#21B79F"/>
+        <path d="M47.9149 11.6568L36.7661 0L14.9744 33.9639L25.4265 44.7206L47.9149 11.6568Z" fill="#21B79F"/>
+        <path d="M0 18.5099L14.9744 33.9639L21.3581 11.6568L10.1467 0L0 18.5099Z" fill="#21B79F"/>
+      </g>
+      <text class="t m" x="32" y="16" font-size="16" fill="#21B79F" letter-spacing="-0.4">Visio</text>
     </g>
 
     <!-- search -->

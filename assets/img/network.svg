@@ -28,13 +28,11 @@
 
   <!-- center hub -->
   <circle cx="320" cy="236" r="42" fill="#001f1f"/>
-  <g transform="translate(320 236)">
-    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#cdface"/>
-    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#cdface" transform="rotate(72)" opacity="0.8"/>
-    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#67e2eb" transform="rotate(144)" opacity="0.8"/>
-    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#dcc2eb" transform="rotate(216)" opacity="0.8"/>
-    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#fff3c2" transform="rotate(288)" opacity="0.9"/>
-    <circle r="6" fill="#001f1f"/>
+  <!-- Visio mark at full 48x45 scale, centred in the hub -->
+  <g transform="translate(296 213.5)">
+    <path d="M33.7382 37.7958C34.1107 39.5305 35.4658 40.8856 37.2006 41.2582C35.4658 41.6307 34.1107 42.9858 33.7382 44.7206C33.3656 42.9858 32.0105 41.6307 30.2758 41.2582C32.0105 40.8856 33.3656 39.5305 33.7382 37.7958Z" fill="#21B79F"/>
+    <path d="M47.9149 11.6568L36.7661 0L14.9744 33.9639L25.4265 44.7206L47.9149 11.6568Z" fill="#21B79F"/>
+    <path d="M0 18.5099L14.9744 33.9639L21.3581 11.6568L10.1467 0L0 18.5099Z" fill="#21B79F"/>
   </g>
 
   <!-- nodes -->

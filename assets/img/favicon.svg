@@ -1,11 +1,9 @@
+<!-- Built from logo-mark.svg. The mark's small sparkle is dropped here — at a
+     16px tab icon it renders under 3px and reads as noise rather than detail. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#001f1f"/>
-  <g transform="translate(32 32)">
-    <ellipse cx="0" cy="-11" rx="6" ry="10" fill="#cdface"/>
-    <ellipse cx="0" cy="-11" rx="6" ry="10" fill="#cdface" transform="rotate(72)" opacity="0.85"/>
-    <ellipse cx="0" cy="-11" rx="6" ry="10" fill="#67e2eb" transform="rotate(144)" opacity="0.85"/>
-    <ellipse cx="0" cy="-11" rx="6" ry="10" fill="#dcc2eb" transform="rotate(216)" opacity="0.85"/>
-    <ellipse cx="0" cy="-11" rx="6" ry="10" fill="#fff3c2" transform="rotate(288)" opacity="0.9"/>
-    <circle cx="0" cy="0" r="4.5" fill="#001f1f"/>
+  <g transform="translate(12 13.25) scale(0.8333)">
+    <path d="M47.9149 11.6568L36.7661 0L14.9744 33.9639L25.4265 44.7206L47.9149 11.6568Z" fill="#21B79F"/>
+    <path d="M0 18.5099L14.9744 33.9639L21.3581 11.6568L10.1467 0L0 18.5099Z" fill="#21B79F"/>
   </g>
 </svg>
