@@ -38,6 +38,22 @@ parchment. All tokens live in `:root` at the top of `assets/css/styles.css`.
   0.08em tracking on 11px uppercase labels.
 - **Rhythm** — every section opens badge → heading → description.
 
+## Brand assets
+
+Two drop-in slots in `assets/img/` — overwrite the files, keep the filenames:
+
+| File | Used by | Notes |
+|------|---------|-------|
+| `logo-lockup.svg` | Nav and footer on all three pages | Rendered at 30px height, width auto |
+| `logo-mark.svg` | Symbol-only contexts | Square mark |
+| `favicon.svg` | Browser tab icon | Needs to read at 16px |
+
+The nav anchor carries `logo logo--lockup`, which hides the HTML `Visio` text so the
+artwork carries the whole logo. To switch to a symbol plus live text, drop `logo--lockup`
+and point `src` at `logo-mark.svg`.
+
+Replacement SVGs need a `viewBox` so they scale to the height the layout gives them.
+
 ## Imagery
 
 All artwork in `assets/img/` is hand-authored SVG drawn to the palette — the petal logo mark,

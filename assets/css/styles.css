@@ -361,7 +361,14 @@ a.pill:hover .pill__dot { transform: translateX(2px) rotate(-45deg); }
 }
 
 .logo { display: inline-flex; align-items: center; gap: 9px; }
-.logo__mark { width: 26px; height: 26px; transition: transform 0.6s var(--ease-out); }
+
+/* Sized by height with auto width, so a square mark and a wide lockup
+   both drop in without touching the markup. */
+.logo__mark {
+  height: 26px;
+  width: auto;
+  transition: transform 0.6s var(--ease-out);
+}
 .logo:hover .logo__mark { transform: rotate(60deg); }
 .logo__word {
   font-size: 20px;
@@ -369,6 +376,13 @@ a.pill:hover .pill__dot { transform: translateX(2px) rotate(-45deg); }
   letter-spacing: -0.03em;
   color: var(--color-deep-teal);
 }
+
+/* Add .logo--lockup to the anchor when the artwork already contains the
+   wordmark: hides the text and drops the spin, which only suits a symbol. */
+.logo--lockup { gap: 0; }
+.logo--lockup .logo__word { display: none; }
+.logo--lockup .logo__mark { height: 30px; }
+.logo--lockup:hover .logo__mark { transform: none; }
 
 .nav__links { display: flex; align-items: center; gap: 4px; }
 .nav__link {

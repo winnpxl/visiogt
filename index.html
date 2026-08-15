@@ -29,8 +29,11 @@
 <!-- ============ Nav ============ -->
 <header class="nav">
   <div class="wrap nav__inner">
-    <a class="logo" href="index.html" aria-label="Visio home">
-      <img class="logo__mark" src="assets/img/logo.svg" alt="" width="26" height="26">
+    <!-- Drop-in slot: overwrite assets/img/logo-lockup.svg with the real artwork.
+         For a symbol-only mark instead, remove logo--lockup and point src at
+         assets/img/logo-mark.svg — the "Visio" text then renders beside it. -->
+    <a class="logo logo--lockup" href="index.html" aria-label="Visio home">
+      <img class="logo__mark" src="assets/img/logo-lockup.svg" alt="Visio">
       <span class="logo__word">Visio</span>
     </a>
 
@@ -606,8 +609,8 @@
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a class="logo" href="index.html" aria-label="Visio home">
-          <img class="logo__mark" src="assets/img/logo.svg" alt="" width="26" height="26">
+        <a class="logo logo--lockup" href="index.html" aria-label="Visio home">
+          <img class="logo__mark" src="assets/img/logo-lockup.svg" alt="Visio">
           <span class="logo__word">Visio</span>
         </a>
         <p class="body-sm">The most trusted way to get work done. Vetted African talent, matched by AI,

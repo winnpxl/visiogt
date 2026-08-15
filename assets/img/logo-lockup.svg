@@ -1,0 +1,19 @@
+<!-- PLACEHOLDER LOCKUP — overwrite this file with the real Visio lockup SVG.
+     Keep the filename and make sure the replacement has a viewBox so it
+     scales to the 30px height the nav and footer give it. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 32" role="img" aria-label="Visio">
+  <g transform="translate(16 16)">
+    <ellipse cx="0" cy="-8.5" rx="4.6" ry="7.4" fill="#cdface"/>
+    <ellipse cx="0" cy="-8.5" rx="4.6" ry="7.4" fill="#cdface" transform="rotate(60)"/>
+    <ellipse cx="0" cy="-8.5" rx="4.6" ry="7.4" fill="#a9eba9" transform="rotate(120)"/>
+    <ellipse cx="0" cy="-8.5" rx="4.6" ry="7.4" fill="#67e2eb" transform="rotate(180)" opacity="0.85"/>
+    <ellipse cx="0" cy="-8.5" rx="4.6" ry="7.4" fill="#dcc2eb" transform="rotate(240)" opacity="0.9"/>
+    <ellipse cx="0" cy="-8.5" rx="4.6" ry="7.4" fill="#fff3c2" transform="rotate(300)"/>
+    <circle r="3.8" fill="#001f1f"/>
+    <circle r="1.4" fill="#cdface"/>
+  </g>
+  <!-- textLength pins the width so the wordmark fits whatever font resolves -->
+  <text x="38" y="22" font-family="'DM Sans','Segoe UI',system-ui,sans-serif"
+        font-size="21" font-weight="500" letter-spacing="-0.6" fill="#003d3d"
+        textLength="52" lengthAdjust="spacingAndGlyphs">Visio</text>
+</svg>
