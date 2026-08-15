@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Visio petal mark">
+  <g transform="translate(32 32)">
+    <g opacity="0.92">
+      <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#cdface"/>
+      <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#2a4e1c" opacity="0.12"/>
+    </g>
+    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#cdface" transform="rotate(60)"/>
+    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#a9eba9" transform="rotate(120)"/>
+    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#67e2eb" transform="rotate(180)" opacity="0.85"/>
+    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#dcc2eb" transform="rotate(240)" opacity="0.9"/>
+    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#fff3c2" transform="rotate(300)"/>
+    <circle cx="0" cy="0" r="7" fill="#001f1f"/>
+    <circle cx="0" cy="0" r="2.6" fill="#cdface"/>
+  </g>
+</svg>

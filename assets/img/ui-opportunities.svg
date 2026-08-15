@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Opportunity feed showing verified projects matched to a talent profile">
+  <defs><style>.t{font-family:'DM Sans','Inter',system-ui,sans-serif}.m{font-weight:500}</style></defs>
+  <rect width="640" height="400" rx="12" fill="#ffffff"/>
+
+  <text class="t m" x="32" y="44" font-size="16" fill="#001f1f" letter-spacing="-0.3">Matched to you</text>
+  <text class="t" x="32" y="64" font-size="11.5" fill="#5c7070">Verified projects · no bidding, no cold pitching</text>
+  <rect x="516" y="28" width="92" height="24" rx="12" fill="#e4f7f9"/>
+  <text class="t m" x="562" y="44" font-size="10.5" fill="#001f1f" text-anchor="middle">3 NEW TODAY</text>
+  <line x1="32" y1="86" x2="608" y2="86" stroke="#001f1f" stroke-opacity="0.08"/>
+
+  <!-- opportunity 1 -->
+  <g transform="translate(0 0)">
+    <rect x="24" y="102" width="592" height="86" rx="14" fill="#f8fbe7"/>
+    <text class="t m" x="48" y="132" font-size="13.5" fill="#001f1f">Payments platform · Backend Engineer</text>
+    <text class="t" x="48" y="152" font-size="11.5" fill="#5c7070">Fintech scale-up, Berlin · 10 weeks · milestone based</text>
+    <g>
+      <rect x="48" y="160" width="62" height="18" rx="9" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.14"/>
+      <text class="t" x="79" y="173" font-size="10" fill="#5c7070" text-anchor="middle">Go</text>
+      <rect x="116" y="160" width="76" height="18" rx="9" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.14"/>
+      <text class="t" x="154" y="173" font-size="10" fill="#5c7070" text-anchor="middle">PostgreSQL</text>
+      <rect x="198" y="160" width="72" height="18" rx="9" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.14"/>
+      <text class="t" x="234" y="173" font-size="10" fill="#5c7070" text-anchor="middle">Remote</text>
+    </g>
+    <text class="t m" x="592" y="136" font-size="19" fill="#001f1f" text-anchor="end" letter-spacing="-0.4">$9,800</text>
+    <text class="t" x="592" y="154" font-size="10.5" fill="#889494" text-anchor="end">TOTAL VALUE</text>
+    <rect x="500" y="160" width="92" height="22" rx="11" fill="#001f1f"/>
+    <text class="t m" x="546" y="175" font-size="10.5" fill="#ffffff" text-anchor="middle">View brief</text>
+  </g>
+
+  <!-- opportunity 2 -->
+  <g transform="translate(0 100)">
+    <rect x="24" y="102" width="592" height="70" rx="14" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.09"/>
+    <text class="t m" x="48" y="130" font-size="13" fill="#001f1f">Data pipeline rebuild · Analytics Engineer</text>
+    <text class="t" x="48" y="150" font-size="11.5" fill="#5c7070">Logistics SME, Nairobi · 6 weeks</text>
+    <text class="t m" x="592" y="134" font-size="17" fill="#001f1f" text-anchor="end" letter-spacing="-0.4">$6,400</text>
+    <text class="t" x="592" y="152" font-size="10.5" fill="#2a4e1c" text-anchor="end">Starts next week</text>
+  </g>
+
+  <!-- opportunity 3 -->
+  <g transform="translate(0 184)">
+    <rect x="24" y="102" width="592" height="70" rx="14" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.09"/>
+    <text class="t m" x="48" y="130" font-size="13" fill="#001f1f">Design system audit · Product Designer</text>
+    <text class="t" x="48" y="150" font-size="11.5" fill="#5c7070">Health-tech startup, London · 4 weeks</text>
+    <text class="t m" x="592" y="134" font-size="17" fill="#001f1f" text-anchor="end" letter-spacing="-0.4">$5,100</text>
+    <text class="t" x="592" y="152" font-size="10.5" fill="#889494" text-anchor="end">Interview stage</text>
+  </g>
+</svg>

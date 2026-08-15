@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Illustrated portrait">
+  <circle cx="48" cy="48" r="48" fill="#e4f7f9"/>
+  <g>
+    <circle cx="48" cy="42" r="13" fill="#003d3d"/>
+    <path d="M22 96c0-14.4 11.6-26 26-26s26 11.6 26 26z" fill="#001f1f"/>
+    <path d="M32 44c-2-12 6-20 16-20s18 8 16 20c-1-8-7-13-16-13s-15 5-16 13z" fill="#001f1f"/>
+    <path d="M30 44c-4 0-6 4-4 7 1.5 2.2 4 2 5 0z" fill="#001f1f"/>
+    <path d="M66 44c4 0 6 4 4 7-1.5 2.2-4 2-5 0z" fill="#001f1f"/>
+  </g>
+</svg>

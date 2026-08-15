@@ -1,0 +1,69 @@
+# Visio
+
+Marketing site for **Visio** — a managed project delivery platform where vetted African
+professionals are matched to projects by AI, with a dedicated Project Manager overseeing
+delivery from brief to launch.
+
+Static HTML, CSS and vanilla JavaScript. No build step, no dependencies.
+
+## Pages
+
+| Page | Purpose |
+|------|---------|
+| `index.html` | Homepage — hero, about, how it works, platform, categories, stories, FAQ |
+| `clients.html` | For clients — what you get, the process, pricing, quality assurance |
+| `talent.html` | For talent — why join, verification, opportunities, earnings |
+
+## Running locally
+
+Any static file server works:
+
+```bash
+npx serve -l 4321 .
+```
+
+Then open <http://localhost:4321>.
+
+## Design system
+
+The site implements the **Lattice** style reference — a botanical field journal on warm
+parchment. All tokens live in `:root` at the top of `assets/css/styles.css`.
+
+- **Canvas** — Parchment `#f7f6f2`. Never pure white for the page background.
+- **Structure** — Forest Ink `#001f1f` carries all primary text, primary buttons and borders.
+- **Pastel taxonomy** — each content category keeps its own tint across every page:
+  Mint = matching, Lime = managed delivery, Lavender = payments and testimonials,
+  Blush = quality, Sage = clients, Buttercream = warm accents.
+- **Type** — DM Sans (substituting Matter) at 400/500 only, tight tracking on display sizes,
+  0.08em tracking on 11px uppercase labels.
+- **Rhythm** — every section opens badge → heading → description.
+
+## Imagery
+
+All artwork in `assets/img/` is hand-authored SVG drawn to the palette — the petal logo mark,
+the hero workspace dashboard, product UI panels (brief, matching, milestones, payments,
+quality review, verification, opportunities, earnings), a network illustration and four
+illustrated avatars. No stock photography, per the design reference.
+
+## JavaScript
+
+`assets/js/main.js` is dependency-free and covers:
+
+- **Inertial smooth scrolling** — wheel input is eased into the real window scroll position
+  each frame, so sticky positioning, the native scrollbar and anchors all keep working.
+  Nested scrollable areas are left to scroll natively.
+- Eased anchor navigation with a sticky-nav offset
+- Scroll reveal (IntersectionObserver, with a geometry fallback)
+- Scroll progress bar, sticky nav state, mobile menu
+- FAQ accordion, testimonial carousel, animated counters
+
+Everything degrades to native behaviour under `prefers-reduced-motion`, and the reveal
+animations only arm once JS is running so a script failure can't leave the page blank.
+
+## Before launch
+
+- The logo strip wordmarks (Kolaba, Northwind, Tenda Health, …) are invented placeholders.
+- Testimonials and the homepage stat figures are illustrative.
+- CTAs point at `mailto:` placeholders on the `visio.example` domain.
+
+Each is marked with an HTML comment where it appears.

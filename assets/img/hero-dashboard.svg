@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Visio project delivery workspace showing milestones, project manager and delivery health">
+  <defs>
+    <style>
+      .t { font-family: 'DM Sans','Inter',system-ui,sans-serif; }
+      .m { font-weight: 500; }
+      .ink { fill: #001f1f; }
+      .gray { fill: #5c7070; }
+      .mist { fill: #889494; }
+    </style>
+    <clipPath id="frame"><rect width="1200" height="760" rx="20"/></clipPath>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#003d3d"/>
+      <stop offset="1" stop-color="#2a4e1c"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="760" fill="#ffffff"/>
+
+    <!-- ============ Sidebar ============ -->
+    <rect x="0" y="0" width="236" height="760" fill="#f7f6f2"/>
+    <line x1="236" y1="0" x2="236" y2="760" stroke="#001f1f" stroke-opacity="0.08"/>
+
+    <g transform="translate(28 30)">
+      <circle cx="11" cy="11" r="11" fill="#001f1f"/>
+      <circle cx="11" cy="11" r="4" fill="#cdface"/>
+      <text class="t m" x="32" y="16" font-size="16" fill="#003d3d" letter-spacing="-0.4">Visio</text>
+    </g>
+
+    <!-- search -->
+    <rect x="24" y="76" width="188" height="34" rx="10" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.09"/>
+    <circle cx="42" cy="93" r="5" fill="none" stroke="#889494" stroke-width="1.5"/>
+    <line x1="46" y1="97" x2="49" y2="100" stroke="#889494" stroke-width="1.5" stroke-linecap="round"/>
+    <text class="t" x="60" y="97" font-size="12" fill="#889494">Search projects</text>
+
+    <!-- nav -->
+    <g>
+      <rect x="16" y="128" width="204" height="36" rx="10" fill="#cdface" fill-opacity="0.55"/>
+      <rect x="30" y="140" width="12" height="12" rx="3" fill="#001f1f"/>
+      <text class="t m" x="54" y="150" font-size="13" fill="#001f1f">Overview</text>
+    </g>
+    <g fill="#5c7070">
+      <rect x="30" y="180" width="12" height="12" rx="3" fill="#5c7070" fill-opacity="0.35"/>
+      <text class="t" x="54" y="190" font-size="13">Milestones</text>
+      <rect x="30" y="220" width="12" height="12" rx="3" fill="#5c7070" fill-opacity="0.35"/>
+      <text class="t" x="54" y="230" font-size="13">Talent</text>
+      <rect x="30" y="260" width="12" height="12" rx="3" fill="#5c7070" fill-opacity="0.35"/>
+      <text class="t" x="54" y="270" font-size="13">Files</text>
+      <rect x="30" y="300" width="12" height="12" rx="3" fill="#5c7070" fill-opacity="0.35"/>
+      <text class="t" x="54" y="310" font-size="13">Payments</text>
+    </g>
+
+    <line x1="24" y1="346" x2="212" y2="346" stroke="#001f1f" stroke-opacity="0.08"/>
+    <text class="t m" x="30" y="374" font-size="10" fill="#889494" letter-spacing="1">ACTIVE PROJECTS</text>
+    <g>
+      <circle cx="34" cy="400" r="4" fill="#2a4e1c"/>
+      <text class="t" x="50" y="404" font-size="12.5" fill="#001f1f">Platform Rebuild</text>
+      <circle cx="34" cy="432" r="4" fill="#a36a14"/>
+      <text class="t" x="50" y="436" font-size="12.5" fill="#5c7070">Data Warehouse</text>
+      <circle cx="34" cy="464" r="4" fill="#652ea3"/>
+      <text class="t" x="50" y="468" font-size="12.5" fill="#5c7070">Mobile App v2</text>
+    </g>
+
+    <!-- sidebar PM card -->
+    <rect x="20" y="620" width="196" height="112" rx="14" fill="#e4f7f9"/>
+    <circle cx="48" cy="656" r="17" fill="#003d3d"/>
+    <text class="t m" x="41" y="661" font-size="13" fill="#cdface">AO</text>
+    <text class="t m" x="74" y="651" font-size="12.5" fill="#001f1f">Adaeze O.</text>
+    <text class="t" x="74" y="667" font-size="11" fill="#5c7070">Project Manager</text>
+    <rect x="36" y="688" width="164" height="30" rx="15" fill="#001f1f"/>
+    <text class="t m" x="118" y="707" font-size="12" fill="#ffffff" text-anchor="middle">Message</text>
+
+    <!-- ============ Top bar ============ -->
+    <line x1="236" y1="86" x2="1200" y2="86" stroke="#001f1f" stroke-opacity="0.08"/>
+    <text class="t m" x="268" y="46" font-size="20" fill="#001f1f" letter-spacing="-0.5">Q3 Platform Rebuild</text>
+    <rect x="268" y="58" width="86" height="20" rx="10" fill="#cdface"/>
+    <text class="t m" x="311" y="72" font-size="10.5" fill="#001f1f" text-anchor="middle">ON TRACK</text>
+    <text class="t" x="368" y="72" font-size="11.5" fill="#889494">Brief approved 12 Jun</text>
+
+    <!-- avatar stack -->
+    <g transform="translate(986 32)">
+      <circle cx="16" cy="16" r="16" fill="#cdface" stroke="#fff" stroke-width="2"/>
+      <text class="t m" x="16" y="21" font-size="11" fill="#001f1f" text-anchor="middle">KM</text>
+      <circle cx="40" cy="16" r="16" fill="#e1e1fa" stroke="#fff" stroke-width="2"/>
+      <text class="t m" x="40" y="21" font-size="11" fill="#001f1f" text-anchor="middle">TB</text>
+      <circle cx="64" cy="16" r="16" fill="#fff3c2" stroke="#fff" stroke-width="2"/>
+      <text class="t m" x="64" y="21" font-size="11" fill="#001f1f" text-anchor="middle">SN</text>
+      <circle cx="88" cy="16" r="16" fill="#f7f6f2" stroke="#fff" stroke-width="2"/>
+      <text class="t m" x="88" y="21" font-size="10.5" fill="#5c7070" text-anchor="middle">+4</text>
+    </g>
+
+    <!-- ============ Stat cards ============ -->
+    <g>
+      <rect x="268" y="118" width="228" height="104" rx="14" fill="#f8fbe7"/>
+      <text class="t" x="292" y="148" font-size="11.5" fill="#5c7070">Overall progress</text>
+      <text class="t m" x="292" y="186" font-size="34" fill="#001f1f" letter-spacing="-1">68%</text>
+      <rect x="292" y="198" width="180" height="6" rx="3" fill="#001f1f" fill-opacity="0.09"/>
+      <rect x="292" y="198" width="122" height="6" rx="3" fill="url(#bar)"/>
+
+      <rect x="512" y="118" width="228" height="104" rx="14" fill="#e4f7f9"/>
+      <text class="t" x="536" y="148" font-size="11.5" fill="#5c7070">Milestones cleared</text>
+      <text class="t m" x="536" y="186" font-size="34" fill="#001f1f" letter-spacing="-1">5<tspan font-size="20" fill="#5c7070"> / 8</tspan></text>
+      <g transform="translate(536 198)">
+        <rect width="18" height="6" rx="3" fill="#003d3d"/>
+        <rect x="22" width="18" height="6" rx="3" fill="#003d3d"/>
+        <rect x="44" width="18" height="6" rx="3" fill="#003d3d"/>
+        <rect x="66" width="18" height="6" rx="3" fill="#003d3d"/>
+        <rect x="88" width="18" height="6" rx="3" fill="#003d3d"/>
+        <rect x="110" width="18" height="6" rx="3" fill="#001f1f" fill-opacity="0.12"/>
+        <rect x="132" width="18" height="6" rx="3" fill="#001f1f" fill-opacity="0.12"/>
+        <rect x="154" width="18" height="6" rx="3" fill="#001f1f" fill-opacity="0.12"/>
+      </g>
+
+      <rect x="756" y="118" width="228" height="104" rx="14" fill="#fcf2fe"/>
+      <text class="t" x="780" y="148" font-size="11.5" fill="#5c7070">Next delivery</text>
+      <text class="t m" x="780" y="186" font-size="34" fill="#001f1f" letter-spacing="-1">22 Aug</text>
+      <text class="t" x="780" y="207" font-size="11" fill="#5c7070">API integration handover</text>
+
+      <rect x="1000" y="118" width="168" height="104" rx="14" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.1"/>
+      <text class="t" x="1022" y="148" font-size="11.5" fill="#5c7070">In escrow</text>
+      <text class="t m" x="1022" y="186" font-size="30" fill="#001f1f" letter-spacing="-1">$18,400</text>
+      <text class="t" x="1022" y="207" font-size="11" fill="#2a4e1c">Released per milestone</text>
+    </g>
+
+    <!-- ============ Milestone table ============ -->
+    <text class="t m" x="268" y="266" font-size="14" fill="#001f1f">Milestones</text>
+    <rect x="1074" y="250" width="94" height="26" rx="13" fill="#001f1f"/>
+    <text class="t m" x="1121" y="267" font-size="11.5" fill="#ffffff" text-anchor="middle">+ New</text>
+
+    <g>
+      <!-- header row -->
+      <line x1="268" y1="286" x2="1168" y2="286" stroke="#001f1f" stroke-opacity="0.09"/>
+      <text class="t m" x="268" y="306" font-size="10" fill="#889494" letter-spacing="1">MILESTONE</text>
+      <text class="t m" x="700" y="306" font-size="10" fill="#889494" letter-spacing="1">TALENT</text>
+      <text class="t m" x="880" y="306" font-size="10" fill="#889494" letter-spacing="1">PROGRESS</text>
+      <text class="t m" x="1090" y="306" font-size="10" fill="#889494" letter-spacing="1">STATUS</text>
+      <line x1="268" y1="318" x2="1168" y2="318" stroke="#001f1f" stroke-opacity="0.09"/>
+
+      <!-- row 1 -->
+      <g transform="translate(0 0)">
+        <circle cx="278" cy="350" r="8" fill="#001f1f"/>
+        <path d="M274.5 350 L277 352.5 L281.5 347.5" stroke="#cdface" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="t m" x="298" y="354" font-size="13" fill="#001f1f">Discovery &amp; technical brief</text>
+        <circle cx="708" cy="350" r="11" fill="#e1e1fa"/>
+        <text class="t m" x="708" y="354" font-size="9.5" fill="#001f1f" text-anchor="middle">TB</text>
+        <text class="t" x="726" y="354" font-size="12" fill="#5c7070">Tobi B.</text>
+        <rect x="880" y="346" width="170" height="7" rx="3.5" fill="#001f1f" fill-opacity="0.08"/>
+        <rect x="880" y="346" width="170" height="7" rx="3.5" fill="url(#bar)"/>
+        <rect x="1090" y="340" width="78" height="21" rx="10.5" fill="#cdface"/>
+        <text class="t m" x="1129" y="354" font-size="10" fill="#001f1f" text-anchor="middle">APPROVED</text>
+        <line x1="268" y1="382" x2="1168" y2="382" stroke="#001f1f" stroke-opacity="0.07"/>
+      </g>
+
+      <!-- row 2 -->
+      <g transform="translate(0 64)">
+        <circle cx="278" cy="350" r="8" fill="#001f1f"/>
+        <path d="M274.5 350 L277 352.5 L281.5 347.5" stroke="#cdface" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="t m" x="298" y="354" font-size="13" fill="#001f1f">Design system &amp; UI flows</text>
+        <circle cx="708" cy="350" r="11" fill="#fff3c2"/>
+        <text class="t m" x="708" y="354" font-size="9.5" fill="#001f1f" text-anchor="middle">SN</text>
+        <text class="t" x="726" y="354" font-size="12" fill="#5c7070">Sena N.</text>
+        <rect x="880" y="346" width="170" height="7" rx="3.5" fill="#001f1f" fill-opacity="0.08"/>
+        <rect x="880" y="346" width="170" height="7" rx="3.5" fill="url(#bar)"/>
+        <rect x="1090" y="340" width="78" height="21" rx="10.5" fill="#cdface"/>
+        <text class="t m" x="1129" y="354" font-size="10" fill="#001f1f" text-anchor="middle">APPROVED</text>
+        <line x1="268" y1="382" x2="1168" y2="382" stroke="#001f1f" stroke-opacity="0.07"/>
+      </g>
+
+      <!-- row 3 (active) -->
+      <g transform="translate(0 128)">
+        <rect x="256" y="326" width="924" height="48" rx="12" fill="#f8fbe7"/>
+        <circle cx="278" cy="350" r="8" fill="none" stroke="#001f1f" stroke-width="1.6" stroke-dasharray="3 3"/>
+        <text class="t m" x="298" y="354" font-size="13" fill="#001f1f">API integration &amp; data sync</text>
+        <circle cx="708" cy="350" r="11" fill="#cdface"/>
+        <text class="t m" x="708" y="354" font-size="9.5" fill="#001f1f" text-anchor="middle">KM</text>
+        <text class="t" x="726" y="354" font-size="12" fill="#5c7070">Kwame M.</text>
+        <rect x="880" y="346" width="170" height="7" rx="3.5" fill="#001f1f" fill-opacity="0.08"/>
+        <rect x="880" y="346" width="106" height="7" rx="3.5" fill="url(#bar)"/>
+        <rect x="1090" y="340" width="78" height="21" rx="10.5" fill="#fff3c2"/>
+        <text class="t m" x="1129" y="354" font-size="10" fill="#001f1f" text-anchor="middle">IN REVIEW</text>
+      </g>
+
+      <!-- row 4 -->
+      <g transform="translate(0 192)">
+        <circle cx="278" cy="350" r="8" fill="none" stroke="#001f1f" stroke-width="1.6" stroke-opacity="0.35"/>
+        <text class="t" x="298" y="354" font-size="13" fill="#5c7070">QA, load testing &amp; hardening</text>
+        <circle cx="708" cy="350" r="11" fill="#e4f7f9"/>
+        <text class="t m" x="708" y="354" font-size="9.5" fill="#001f1f" text-anchor="middle">LA</text>
+        <text class="t" x="726" y="354" font-size="12" fill="#5c7070">Lerato A.</text>
+        <rect x="880" y="346" width="170" height="7" rx="3.5" fill="#001f1f" fill-opacity="0.08"/>
+        <rect x="880" y="346" width="34" height="7" rx="3.5" fill="url(#bar)"/>
+        <rect x="1090" y="340" width="78" height="21" rx="10.5" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.18"/>
+        <text class="t m" x="1129" y="354" font-size="10" fill="#5c7070" text-anchor="middle">QUEUED</text>
+        <line x1="268" y1="382" x2="1168" y2="382" stroke="#001f1f" stroke-opacity="0.07"/>
+      </g>
+
+      <!-- row 5 -->
+      <g transform="translate(0 256)">
+        <circle cx="278" cy="350" r="8" fill="none" stroke="#001f1f" stroke-width="1.6" stroke-opacity="0.35"/>
+        <text class="t" x="298" y="354" font-size="13" fill="#5c7070">Launch &amp; handover pack</text>
+        <circle cx="708" cy="350" r="11" fill="#fcf2fe"/>
+        <text class="t m" x="708" y="354" font-size="9.5" fill="#001f1f" text-anchor="middle">AO</text>
+        <text class="t" x="726" y="354" font-size="12" fill="#5c7070">Adaeze O.</text>
+        <rect x="880" y="346" width="170" height="7" rx="3.5" fill="#001f1f" fill-opacity="0.08"/>
+        <rect x="1090" y="340" width="78" height="21" rx="10.5" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.18"/>
+        <text class="t m" x="1129" y="354" font-size="10" fill="#5c7070" text-anchor="middle">QUEUED</text>
+      </g>
+    </g>
+  </g>
+</svg>

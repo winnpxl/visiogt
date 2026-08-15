@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-label="Abstract network connecting African talent hubs to companies worldwide">
+  <defs><style>.t{font-family:'DM Sans','Inter',system-ui,sans-serif}.m{font-weight:500}</style>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bff1f5"/>
+      <stop offset="62%" stop-color="#a9eba9"/>
+      <stop offset="100%" stop-color="#67e2eb"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="640" height="460" rx="14" fill="#ffffff"/>
+  <circle cx="320" cy="236" r="176" fill="url(#halo)" opacity="0.34"/>
+
+  <!-- orbit rings -->
+  <g fill="none" stroke="#001f1f" stroke-opacity="0.14">
+    <circle cx="320" cy="236" r="150"/>
+    <ellipse cx="320" cy="236" rx="150" ry="58"/>
+    <ellipse cx="320" cy="236" rx="60" ry="150"/>
+    <ellipse cx="320" cy="236" rx="112" ry="150"/>
+  </g>
+
+  <!-- connection arcs -->
+  <g fill="none" stroke="#001f1f" stroke-opacity="0.45" stroke-width="1.4" stroke-dasharray="4 5">
+    <path d="M320 236 C 250 150, 180 120, 118 96"/>
+    <path d="M320 236 C 400 160, 470 122, 528 104"/>
+    <path d="M320 236 C 420 250, 490 300, 546 344"/>
+    <path d="M320 236 C 230 268, 160 312, 104 352"/>
+  </g>
+
+  <!-- center hub -->
+  <circle cx="320" cy="236" r="42" fill="#001f1f"/>
+  <g transform="translate(320 236)">
+    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#cdface"/>
+    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#cdface" transform="rotate(72)" opacity="0.8"/>
+    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#67e2eb" transform="rotate(144)" opacity="0.8"/>
+    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#dcc2eb" transform="rotate(216)" opacity="0.8"/>
+    <ellipse cx="0" cy="-13" rx="7" ry="11.5" fill="#fff3c2" transform="rotate(288)" opacity="0.9"/>
+    <circle r="6" fill="#001f1f"/>
+  </g>
+
+  <!-- nodes -->
+  <g class="t">
+    <g transform="translate(118 96)">
+      <rect x="-52" y="-16" width="104" height="32" rx="16" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.14"/>
+      <circle cx="-34" cy="0" r="5" fill="#2a4e1c"/>
+      <text class="t m" x="-22" y="4" font-size="12" fill="#001f1f">Lagos</text>
+    </g>
+    <g transform="translate(528 104)">
+      <rect x="-52" y="-16" width="104" height="32" rx="16" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.14"/>
+      <circle cx="-34" cy="0" r="5" fill="#652ea3"/>
+      <text class="t m" x="-22" y="4" font-size="12" fill="#001f1f">Berlin</text>
+    </g>
+    <g transform="translate(546 344)">
+      <rect x="-56" y="-16" width="112" height="32" rx="16" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.14"/>
+      <circle cx="-38" cy="0" r="5" fill="#a36a14"/>
+      <text class="t m" x="-26" y="4" font-size="12" fill="#001f1f">New York</text>
+    </g>
+    <g transform="translate(104 352)">
+      <rect x="-56" y="-16" width="112" height="32" rx="16" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.14"/>
+      <circle cx="-38" cy="0" r="5" fill="#003d3d"/>
+      <text class="t m" x="-26" y="4" font-size="12" fill="#001f1f">Nairobi</text>
+    </g>
+    <g transform="translate(320 424)">
+      <rect x="-64" y="-16" width="128" height="32" rx="16" fill="#001f1f"/>
+      <text class="t m" x="0" y="4" font-size="12" fill="#cdface" text-anchor="middle">Work without borders</text>
+    </g>
+  </g>
+
+  <!-- small floating dots -->
+  <g fill="#001f1f" fill-opacity="0.3">
+    <circle cx="196" cy="180" r="3"/>
+    <circle cx="452" cy="196" r="3"/>
+    <circle cx="240" cy="330" r="3"/>
+    <circle cx="418" cy="322" r="3"/>
+  </g>
+</svg>

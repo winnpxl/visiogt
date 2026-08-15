@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Project brief form with goals, timeline and budget">
+  <defs><style>.t{font-family:'DM Sans','Inter',system-ui,sans-serif}.m{font-weight:500}</style></defs>
+  <rect width="640" height="400" rx="12" fill="#ffffff"/>
+
+  <text class="t m" x="32" y="46" font-size="17" fill="#001f1f" letter-spacing="-0.3">Start a project</text>
+  <rect x="32" y="58" width="106" height="20" rx="10" fill="#e4f7f9"/>
+  <text class="t m" x="85" y="72" font-size="10" fill="#001f1f" text-anchor="middle">STEP 1 OF 3</text>
+  <circle cx="596" cy="48" r="14" fill="#f7f6f2"/>
+  <path d="M590 48 L595 53 L603 43" stroke="#2a4e1c" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="32" y1="100" x2="608" y2="100" stroke="#001f1f" stroke-opacity="0.08"/>
+
+  <text class="t m" x="32" y="128" font-size="10" fill="#889494" letter-spacing="1">PROJECT GOAL</text>
+  <rect x="32" y="138" width="576" height="56" rx="12" fill="#f7f6f2" stroke="#001f1f" stroke-opacity="0.09"/>
+  <text class="t" x="48" y="162" font-size="12.5" fill="#001f1f">Rebuild our customer portal with a new design system</text>
+  <text class="t" x="48" y="182" font-size="12.5" fill="#5c7070">and a hardened payments integration.</text>
+
+  <text class="t m" x="32" y="228" font-size="10" fill="#889494" letter-spacing="1">SCOPE</text>
+  <g>
+    <rect x="32" y="238" width="118" height="26" rx="13" fill="#cdface" stroke="#001f1f" stroke-opacity="0.5"/>
+    <text class="t m" x="91" y="255" font-size="11.5" fill="#001f1f" text-anchor="middle">Engineering</text>
+    <rect x="158" y="238" width="86" height="26" rx="13" fill="#eff5ce" stroke="#001f1f" stroke-opacity="0.18"/>
+    <text class="t m" x="201" y="255" font-size="11.5" fill="#001f1f" text-anchor="middle">UI / UX</text>
+    <rect x="252" y="238" width="72" height="26" rx="13" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.18"/>
+    <text class="t" x="288" y="255" font-size="11.5" fill="#5c7070" text-anchor="middle">+ Data</text>
+  </g>
+
+  <g>
+    <text class="t m" x="32" y="300" font-size="10" fill="#889494" letter-spacing="1">TIMELINE</text>
+    <rect x="32" y="310" width="272" height="44" rx="12" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.12"/>
+    <text class="t m" x="50" y="338" font-size="13" fill="#001f1f">12 weeks</text>
+    <text class="t" x="130" y="338" font-size="12" fill="#889494">Jun 12 — Sep 04</text>
+  </g>
+  <g>
+    <text class="t m" x="336" y="300" font-size="10" fill="#889494" letter-spacing="1">BUDGET RANGE</text>
+    <rect x="336" y="310" width="272" height="44" rx="12" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.12"/>
+    <text class="t m" x="354" y="338" font-size="13" fill="#001f1f">$20k — $35k</text>
+    <text class="t" x="446" y="338" font-size="12" fill="#889494">Milestone based</text>
+  </g>
+</svg>

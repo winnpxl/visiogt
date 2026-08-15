@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Final quality review checking delivered work against the original brief">
+  <defs><style>.t{font-family:'DM Sans','Inter',system-ui,sans-serif}.m{font-weight:500}</style></defs>
+  <rect width="640" height="400" rx="12" fill="#ffffff"/>
+
+  <text class="t m" x="32" y="44" font-size="16" fill="#001f1f" letter-spacing="-0.3">Delivery review</text>
+  <text class="t" x="32" y="64" font-size="11.5" fill="#5c7070">Checked line by line against the approved brief</text>
+  <rect x="500" y="28" width="108" height="26" rx="13" fill="#cdface" stroke="#001f1f" stroke-opacity="0.5"/>
+  <text class="t m" x="554" y="45" font-size="11" fill="#001f1f" text-anchor="middle">Sign off →</text>
+  <line x1="32" y1="86" x2="608" y2="86" stroke="#001f1f" stroke-opacity="0.08"/>
+
+  <g>
+    <g transform="translate(32 108)">
+      <circle cx="11" cy="11" r="11" fill="#001f1f"/>
+      <path d="M6.2 11.2 L9.6 14.4 L15.8 7.8" stroke="#cdface" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="t m" x="36" y="10" font-size="12.5" fill="#001f1f">Scope matches the signed brief</text>
+      <text class="t" x="36" y="28" font-size="11" fill="#5c7070">14 of 14 requirements delivered</text>
+    </g>
+    <g transform="translate(32 168)">
+      <circle cx="11" cy="11" r="11" fill="#001f1f"/>
+      <path d="M6.2 11.2 L9.6 14.4 L15.8 7.8" stroke="#cdface" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="t m" x="36" y="10" font-size="12.5" fill="#001f1f">Code review &amp; test coverage</text>
+      <text class="t" x="36" y="28" font-size="11" fill="#5c7070">92% coverage · 0 critical issues open</text>
+    </g>
+    <g transform="translate(32 228)">
+      <circle cx="11" cy="11" r="11" fill="#001f1f"/>
+      <path d="M6.2 11.2 L9.6 14.4 L15.8 7.8" stroke="#cdface" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="t m" x="36" y="10" font-size="12.5" fill="#001f1f">Handover pack &amp; documentation</text>
+      <text class="t" x="36" y="28" font-size="11" fill="#5c7070">Runbooks, credentials and architecture notes</text>
+    </g>
+  </g>
+
+  <rect x="32" y="290" width="576" height="76" rx="14" fill="#e1e1fa"/>
+  <text class="t" x="56" y="318" font-size="11" fill="#5c7070">Client satisfaction on delivery</text>
+  <text class="t m" x="56" y="350" font-size="26" fill="#001f1f" letter-spacing="-0.7">4.9 / 5</text>
+  <g transform="translate(430 320)" fill="#001f1f">
+    <path d="M12 0 l3.1 7.3 7.9.7 -6 5.2 1.8 7.7 -6.8-4.1 -6.8 4.1 1.8-7.7 -6-5.2 7.9-.7z"/>
+    <path d="M42 0 l3.1 7.3 7.9.7 -6 5.2 1.8 7.7 -6.8-4.1 -6.8 4.1 1.8-7.7 -6-5.2 7.9-.7z"/>
+    <path d="M72 0 l3.1 7.3 7.9.7 -6 5.2 1.8 7.7 -6.8-4.1 -6.8 4.1 1.8-7.7 -6-5.2 7.9-.7z"/>
+    <path d="M102 0 l3.1 7.3 7.9.7 -6 5.2 1.8 7.7 -6.8-4.1 -6.8 4.1 1.8-7.7 -6-5.2 7.9-.7z"/>
+    <path d="M132 0 l3.1 7.3 7.9.7 -6 5.2 1.8 7.7 -6.8-4.1 -6.8 4.1 1.8-7.7 -6-5.2 7.9-.7z" opacity="0.35"/>
+  </g>
+</svg>

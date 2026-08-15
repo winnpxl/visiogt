@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-label="Talent verification profile showing identity check, skills assessment and delivery record">
+  <defs><style>.t{font-family:'DM Sans','Inter',system-ui,sans-serif}.m{font-weight:500}</style>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#003d3d"/><stop offset="1" stop-color="#2a4e1c"/></linearGradient>
+  </defs>
+  <rect width="640" height="460" rx="14" fill="#ffffff"/>
+
+  <!-- profile head -->
+  <rect x="0" y="0" width="640" height="150" rx="14" fill="#f8fbe7"/>
+  <rect x="0" y="120" width="640" height="30" fill="#f8fbe7"/>
+  <circle cx="76" cy="74" r="30" fill="#cdface"/>
+  <text class="t m" x="76" y="82" font-size="20" fill="#001f1f" text-anchor="middle">KM</text>
+  <text class="t m" x="124" y="64" font-size="19" fill="#001f1f" letter-spacing="-0.4">Kwame M.</text>
+  <path d="M243 50 l3.9 2.6 4.7-.4 1.5 4.4 3.8 2.9 -2.3 4.1 .6 4.7 -4.6 1.4 -3.2 3.4 -4.4-1.9 -4.4 1.9 -3.2-3.4 -4.6-1.4 .6-4.7 -2.3-4.1 3.8-2.9 1.5-4.4 4.7 .4z" fill="#003d3d"/>
+  <path d="M237 57.5 l3 3 6-6.2" stroke="#cdface" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="t" x="124" y="86" font-size="12.5" fill="#5c7070">Senior Backend Engineer · Accra, Ghana</text>
+  <g>
+    <rect x="124" y="98" width="80" height="22" rx="11" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.16"/>
+    <text class="t" x="164" y="113" font-size="10.5" fill="#5c7070" text-anchor="middle">7 yrs exp</text>
+    <rect x="210" y="98" width="106" height="22" rx="11" fill="#ffffff" stroke="#001f1f" stroke-opacity="0.16"/>
+    <text class="t" x="263" y="113" font-size="10.5" fill="#5c7070" text-anchor="middle">Distributed systems</text>
+  </g>
+  <text class="t m" x="608" y="66" font-size="30" fill="#001f1f" text-anchor="end" letter-spacing="-0.9">4.9</text>
+  <text class="t" x="608" y="86" font-size="10.5" fill="#889494" text-anchor="end">18 PROJECTS DELIVERED</text>
+
+  <!-- verification list -->
+  <text class="t m" x="32" y="186" font-size="10" fill="#889494" letter-spacing="1">VERIFICATION</text>
+  <g>
+    <g transform="translate(32 202)">
+      <circle cx="10" cy="10" r="10" fill="#001f1f"/>
+      <path d="M5.6 10.2 L8.7 13 L14.4 7" stroke="#cdface" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="t" x="34" y="14" font-size="12.5" fill="#001f1f">Government ID confirmed</text>
+      <text class="t" x="576" y="14" font-size="11" fill="#2a4e1c" text-anchor="end">Passed</text>
+    </g>
+    <g transform="translate(32 240)">
+      <circle cx="10" cy="10" r="10" fill="#001f1f"/>
+      <path d="M5.6 10.2 L8.7 13 L14.4 7" stroke="#cdface" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="t" x="34" y="14" font-size="12.5" fill="#001f1f">Live technical assessment</text>
+      <text class="t" x="576" y="14" font-size="11" fill="#2a4e1c" text-anchor="end">Top 6%</text>
+    </g>
+    <g transform="translate(32 278)">
+      <circle cx="10" cy="10" r="10" fill="#001f1f"/>
+      <path d="M5.6 10.2 L8.7 13 L14.4 7" stroke="#cdface" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="t" x="34" y="14" font-size="12.5" fill="#001f1f">Reference &amp; portfolio review</text>
+      <text class="t" x="576" y="14" font-size="11" fill="#2a4e1c" text-anchor="end">3 checks</text>
+    </g>
+  </g>
+
+  <line x1="32" y1="322" x2="608" y2="322" stroke="#001f1f" stroke-opacity="0.08"/>
+
+  <!-- skill bars -->
+  <text class="t m" x="32" y="350" font-size="10" fill="#889494" letter-spacing="1">ASSESSED STRENGTHS</text>
+  <g transform="translate(32 364)">
+    <text class="t" x="0" y="18" font-size="12" fill="#001f1f">System design</text>
+    <rect x="200" y="10" width="376" height="8" rx="4" fill="#001f1f" fill-opacity="0.08"/>
+    <rect x="200" y="10" width="350" height="8" rx="4" fill="url(#g4)"/>
+    <text class="t" x="0" y="52" font-size="12" fill="#001f1f">Payments &amp; ledgers</text>
+    <rect x="200" y="44" width="376" height="8" rx="4" fill="#001f1f" fill-opacity="0.08"/>
+    <rect x="200" y="44" width="312" height="8" rx="4" fill="url(#g4)"/>
+    <text class="t" x="0" y="86" font-size="12" fill="#001f1f">Delivery communication</text>
+    <rect x="200" y="78" width="376" height="8" rx="4" fill="#001f1f" fill-opacity="0.08"/>
+    <rect x="200" y="78" width="334" height="8" rx="4" fill="url(#g4)"/>
+  </g>
+</svg>

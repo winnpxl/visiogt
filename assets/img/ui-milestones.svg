@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Delivery timeline showing milestone progress week by week">
+  <defs><style>.t{font-family:'DM Sans','Inter',system-ui,sans-serif}.m{font-weight:500}</style>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#003d3d"/><stop offset="1" stop-color="#2a4e1c"/></linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="12" fill="#ffffff"/>
+
+  <text class="t m" x="32" y="44" font-size="16" fill="#001f1f" letter-spacing="-0.3">Delivery timeline</text>
+  <rect x="196" y="28" width="76" height="22" rx="11" fill="#cdface"/>
+  <text class="t m" x="234" y="43" font-size="10" fill="#001f1f" text-anchor="middle">ON TRACK</text>
+  <text class="t" x="608" y="44" font-size="11.5" fill="#889494" text-anchor="end">12 weeks</text>
+  <line x1="32" y1="66" x2="608" y2="66" stroke="#001f1f" stroke-opacity="0.08"/>
+
+  <!-- week scale -->
+  <g fill="#889494" class="t" font-size="9.5">
+    <text x="32" y="90">W1</text><text x="128" y="90">W3</text><text x="224" y="90">W5</text>
+    <text x="320" y="90">W7</text><text x="416" y="90">W9</text><text x="512" y="90">W11</text>
+  </g>
+  <g stroke="#001f1f" stroke-opacity="0.06">
+    <line x1="128" y1="98" x2="128" y2="330"/><line x1="224" y1="98" x2="224" y2="330"/>
+    <line x1="320" y1="98" x2="320" y2="330"/><line x1="416" y1="98" x2="416" y2="330"/>
+    <line x1="512" y1="98" x2="512" y2="330"/>
+  </g>
+
+  <!-- gantt bars -->
+  <g>
+    <rect x="32" y="106" width="150" height="26" rx="13" fill="url(#g2)"/>
+    <text class="t m" x="46" y="123" font-size="11" fill="#ffffff">Discovery &amp; brief</text>
+
+    <rect x="112" y="146" width="176" height="26" rx="13" fill="url(#g2)"/>
+    <text class="t m" x="126" y="163" font-size="11" fill="#ffffff">Design system</text>
+
+    <rect x="240" y="186" width="200" height="26" rx="13" fill="#cdface"/>
+    <text class="t m" x="254" y="203" font-size="11" fill="#001f1f">API integration</text>
+    <rect x="240" y="186" width="118" height="26" rx="13" fill="#003d3d" fill-opacity="0.85"/>
+    <text class="t m" x="254" y="203" font-size="11" fill="#ffffff">API integration</text>
+
+    <rect x="392" y="226" width="140" height="26" rx="13" fill="#f7f6f2" stroke="#001f1f" stroke-opacity="0.14"/>
+    <text class="t" x="406" y="243" font-size="11" fill="#5c7070">QA &amp; hardening</text>
+
+    <rect x="486" y="266" width="122" height="26" rx="13" fill="#f7f6f2" stroke="#001f1f" stroke-opacity="0.14"/>
+    <text class="t" x="500" y="283" font-size="11" fill="#5c7070">Launch</text>
+  </g>
+
+  <!-- today marker -->
+  <line x1="358" y1="98" x2="358" y2="316" stroke="#7a2251" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <rect x="330" y="304" width="56" height="20" rx="10" fill="#7a2251"/>
+  <text class="t m" x="358" y="318" font-size="10" fill="#ffffff" text-anchor="middle">TODAY</text>
+
+  <line x1="32" y1="344" x2="608" y2="344" stroke="#001f1f" stroke-opacity="0.08"/>
+  <text class="t" x="32" y="370" font-size="11.5" fill="#5c7070">Every milestone is verified against the original brief before sign-off.</text>
+</svg>
