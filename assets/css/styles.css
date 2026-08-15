@@ -563,8 +563,11 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
   font-weight: var(--font-weight-medium);
   animation: bob 6s ease-in-out infinite;
 }
-.stage__float--a { left: 2%; top: 22%; }
-.stage__float--b { right: 2%; bottom: 18%; animation-delay: -3s; }
+/* Sit in the halo band above and below the frame rather than over the device.
+   Each page shows a different mockup, so anything overlapping the screen
+   collided with real UI on at least one of them. */
+.stage__float--a { left: 3%; top: 12px; }
+.stage__float--b { right: 3%; bottom: 12px; animation-delay: -3s; }
 .stage__float .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--color-deep-forest); }
 .stage__float .dot--teal { background: var(--color-deep-teal); }
 @keyframes bob {
@@ -859,7 +862,9 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 }
 .faq__icon::before { width: 11px; height: 1.5px; }
 .faq__icon::after { width: 1.5px; height: 11px; }
-.faq__item.is-open .faq__icon { background: var(--color-forest-ink); transform: rotate(90deg); }
+/* 180deg, not 90: the vertical stroke collapses and the horizontal one stays,
+   so the open state reads as a minus rather than standing on end. */
+.faq__item.is-open .faq__icon { background: var(--color-forest-ink); transform: rotate(180deg); }
 .faq__item.is-open .faq__icon::before { background: #fff; }
 .faq__item.is-open .faq__icon::after { transform: scaleY(0); background: #fff; }
 .faq__a {
@@ -1049,7 +1054,16 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
   .carousel__track > * { flex-basis: 86%; }
   .footer__grid { grid-template-columns: 1fr; }
   .announce__close { display: none; }
-  .announce__inner { padding-inline: 16px; text-align: center; }
+  /* Stack instead of sharing a row — at this width the flex row squeezed the
+     link down to one word per line. */
+  .announce__inner {
+    flex-direction: column;
+    gap: 5px;
+    padding: 9px 16px;
+    text-align: center;
+  }
+  .announce__divider { display: none; }
+  .announce__link { white-space: nowrap; }
   .stat { border-left: 0; border-top: 1px solid rgba(0, 31, 31, 0.12); padding: var(--spacing-20) 0; }
   .btn-row .btn { flex: 1 1 auto; justify-content: center; }
 }
