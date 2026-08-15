@@ -1,15 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Visio petal mark">
-  <g transform="translate(32 32)">
-    <g opacity="0.92">
-      <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#cdface"/>
-      <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#2a4e1c" opacity="0.12"/>
-    </g>
-    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#cdface" transform="rotate(60)"/>
-    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#a9eba9" transform="rotate(120)"/>
-    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#67e2eb" transform="rotate(180)" opacity="0.85"/>
-    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#dcc2eb" transform="rotate(240)" opacity="0.9"/>
-    <ellipse cx="0" cy="-16" rx="8.5" ry="14" fill="#fff3c2" transform="rotate(300)"/>
-    <circle cx="0" cy="0" r="7" fill="#001f1f"/>
-    <circle cx="0" cy="0" r="2.6" fill="#cdface"/>
-  </g>
+<svg width="48" height="45" viewBox="0 0 48 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.7382 37.7958C34.1107 39.5305 35.4658 40.8856 37.2006 41.2582C35.4658 41.6307 34.1107 42.9858 33.7382 44.7206C33.3656 42.9858 32.0105 41.6307 30.2758 41.2582C32.0105 40.8856 33.3656 39.5305 33.7382 37.7958Z" fill="#21B79F"/>
+<path d="M47.9149 11.6568L36.7661 0L14.9744 33.9639L25.4265 44.7206L47.9149 11.6568Z" fill="#21B79F"/>
+<path d="M0 18.5099L14.9744 33.9639L21.3581 11.6568L10.1467 0L0 18.5099Z" fill="#21B79F"/>
 </svg>

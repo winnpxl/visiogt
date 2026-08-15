@@ -13,6 +13,11 @@
   --color-slate: #455252;
   --color-mist: #889494;
   --color-meadow: #cdface;
+  /* Visio brand teal, taken from the logo. Too light to carry white text
+     (2.5:1), so primary actions use the deeper action shade below. */
+  --color-brand: #21b79f;
+  --color-brand-action: #157a69;      /* button fill — 5.2:1 with white */
+  --color-brand-action-deep: #0f6555; /* hover — 7.0:1 with white */
   --color-deep-forest: #2a4e1c;
   --color-deep-teal: #003d3d;
   --color-olive: #515c0b;
@@ -209,13 +214,20 @@ h1, h2, h3, h4, p { margin: 0; }
 .btn:hover { transform: translateY(-2px); }
 .btn:active { transform: translateY(0); }
 
+/* Brand teal with white label and arrow, used for every primary action. */
 .btn--filled {
-  background: var(--color-forest-ink);
+  background: var(--color-brand-action);
   color: #fff;
-  border-color: var(--color-forest-ink);
-  box-shadow: 0 1px 2px rgba(0, 31, 31, 0.18);
+  border-color: var(--color-brand-action);
+  box-shadow: 0 1px 2px rgba(0, 31, 31, 0.14);
 }
-.btn--filled:hover { box-shadow: 0 10px 22px -10px rgba(0, 31, 31, 0.55); }
+.btn--filled:hover {
+  background: var(--color-brand-action-deep);
+  border-color: var(--color-brand-action-deep);
+  box-shadow: 0 10px 22px -10px rgba(21, 122, 105, 0.75);
+}
+/* The arrow inherits, but state it so no context can darken it. */
+.btn--filled .arrow { color: #fff; }
 
 .btn--outlined {
   background: transparent;
@@ -403,14 +415,14 @@ a.pill:hover .pill__dot { transform: translateX(2px) rotate(-45deg); }
   color: var(--color-slate);
 }
 .nav__login:hover { color: var(--color-forest-ink); }
-.nav__cta { border-radius: 11.5px; padding: 11px 18px; }
+.nav__cta { border-radius: var(--radius-buttons); padding: 11px 18px; }
 
 .nav__burger {
   display: none;
   width: 40px;
   height: 40px;
   border: 1.5px solid var(--color-forest-ink);
-  border-radius: 11.5px;
+  border-radius: 50%;
   background: transparent;
   cursor: pointer;
   padding: 0;
@@ -882,7 +894,17 @@ a.pill:hover .pill__dot { transform: translateX(2px) rotate(-45deg); }
 }
 .closer__sub { color: rgba(255, 255, 255, 0.78); max-width: 56ch; position: relative; z-index: 1; }
 .closer .btn-row { position: relative; z-index: 1; margin-top: var(--spacing-12); }
-.closer .btn--filled { background: #fff; color: var(--color-forest-ink); border-color: #fff; }
+/* Same brand teal + white label as everywhere else — the primary action
+   looks identical on the gradient as it does on parchment. */
+.closer .btn--filled {
+  background: var(--color-brand-action);
+  color: #fff;
+  border-color: var(--color-brand-action);
+}
+.closer .btn--filled:hover {
+  background: var(--color-brand-action-deep);
+  border-color: var(--color-brand-action-deep);
+}
 .closer .btn--outlined { border-color: rgba(255, 255, 255, 0.65); color: #fff; }
 .closer .btn--outlined:hover { background: rgba(255, 255, 255, 0.12); }
 

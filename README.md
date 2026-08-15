@@ -30,7 +30,10 @@ The site implements the **Lattice** style reference — a botanical field journa
 parchment. All tokens live in `:root` at the top of `assets/css/styles.css`.
 
 - **Canvas** — Parchment `#f7f6f2`. Never pure white for the page background.
-- **Structure** — Forest Ink `#001f1f` carries all primary text, primary buttons and borders.
+- **Structure** — Forest Ink `#001f1f` carries all primary text and structural borders.
+- **Brand** — the logo teal is `#21B79F` (`--color-brand`). Primary buttons use a deeper
+  shade, `#157A69` (`--color-brand-action`), because white text on the lighter teal is only
+  2.5:1 — below WCAG AA. The action shade reaches 5.2:1 at rest and 7.0:1 on hover.
 - **Pastel taxonomy** — each content category keeps its own tint across every page:
   Mint = matching, Lime = managed delivery, Lavender = payments and testimonials,
   Blush = quality, Sage = clients, Buttercream = warm accents.
