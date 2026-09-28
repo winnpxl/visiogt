@@ -480,39 +480,19 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
    ============================================================ */
 .hero { padding: var(--spacing-72) 0 var(--spacing-48); }
 
-.hero__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: var(--spacing-48);
-  align-items: end;
+.hero__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-20);
 }
-.hero__left { display: flex; flex-direction: column; gap: var(--spacing-36); align-items: flex-start; }
-.hero__right { display: flex; flex-direction: column; gap: var(--spacing-20); padding-bottom: 6px; }
+.hero__stack .btn-row { justify-content: center; margin-top: var(--spacing-12); }
+.hero__sub { max-width: 46ch; margin-top: var(--spacing-12); }
 
-.hero__title .line { display: block; }
-.hero__title em {
-  font-style: normal;
-  position: relative;
-  /* Own stacking context so the highlight sweep sits behind the glyphs
-     rather than behind the page canvas. */
-  z-index: 0;
-  white-space: nowrap;
-}
-.hero__title em::after {
-  content: "";
-  position: absolute;
-  left: -2px;
-  right: -2px;
-  bottom: 0.06em;
-  height: 0.34em;
-  background: var(--color-meadow);
-  border-radius: 4px;
-  z-index: -1;
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: sweep 1.1s var(--ease-out) 0.5s forwards;
-}
-@keyframes sweep { to { transform: scaleX(1); } }
+/* Narrow enough that the headline wraps to two lines, balanced so they come out
+   close to even rather than leaving a stub on the second. */
+.hero__title { max-width: 18ch; text-wrap: balance; }
 
 .hero__meta { display: flex; align-items: center; gap: var(--spacing-20); flex-wrap: wrap; }
 .hero__meta-item { display: flex; align-items: center; gap: 8px; font-size: var(--text-body-sm); color: var(--color-stone); }
@@ -968,6 +948,7 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
   align-items: end;
 }
 .page-hero__left { display: flex; flex-direction: column; gap: var(--spacing-20); align-items: flex-start; }
+.page-hero__right { display: flex; flex-direction: column; gap: var(--spacing-20); padding-bottom: 6px; }
 
 .split {
   display: grid;
@@ -1028,9 +1009,9 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
    Responsive
    ============================================================ */
 @media (max-width: 1024px) {
-  .hero__grid, .page-hero__grid, .sec-head { grid-template-columns: 1fr; }
+  .page-hero__grid, .sec-head { grid-template-columns: 1fr; }
   .sec-head { align-items: start; }
-  .hero__right { padding-bottom: 0; }
+  .page-hero__right { padding-bottom: 0; }
   .grid-4, .cats, .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .carousel__track > * { flex-basis: calc((100% - var(--spacing-20)) / 2); }
@@ -1076,5 +1057,4 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
     transition-duration: 0.001ms !important;
   }
   .reveal { opacity: 1; transform: none; }
-  .hero__title em::after { transform: scaleX(1); }
 }
