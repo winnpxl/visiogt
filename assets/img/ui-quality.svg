@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Final quality review checking delivered work against the original brief">
-  <defs><style>.t{font-family:'Google Sans','Outfit',system-ui,sans-serif}.m{font-weight:500}</style></defs>
+  <defs><style>.t{font-family:'Plus Jakarta Sans',system-ui,sans-serif}.m{font-weight:500}</style></defs>
   <rect width="640" height="400" rx="12" fill="#ffffff"/>
 
   <text class="t m" x="32" y="44" font-size="16" fill="#001f1f" letter-spacing="-0.3">Delivery review</text>

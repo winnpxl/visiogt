@@ -39,10 +39,7 @@
   --gradient-closer: radial-gradient(120% 165% at 50% 28%, rgb(191, 241, 245) 18%, rgb(169, 235, 169) 58%, rgb(103, 226, 235) 100%);
 
   /* Type */
-  /* Google Sans is proprietary and not served for third-party web use, so it
-     leads the stack (honoured wherever it is installed) and Outfit — the
-     closest freely licensed geometric sans — is the webfont actually loaded. */
-  --font-sans: 'Google Sans', 'Google Sans Text', 'Product Sans', 'Outfit', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --text-caption: 11px;
   --text-body-sm: 14px;
   --text-body: 16px;
@@ -494,10 +491,6 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
    close to even rather than leaving a stub on the second. */
 .hero__title { max-width: 18ch; text-wrap: balance; }
 
-.hero__meta { display: flex; align-items: center; gap: var(--spacing-20); flex-wrap: wrap; }
-.hero__meta-item { display: flex; align-items: center; gap: 8px; font-size: var(--text-body-sm); color: var(--color-stone); }
-.hero__meta-item svg { flex: none; }
-
 /* Device frame + halo */
 .stage {
   position: relative;
@@ -941,14 +934,6 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
    Page hero (inner pages)
    ============================================================ */
 .page-hero { padding: var(--spacing-72) 0 var(--spacing-48); }
-.page-hero__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: var(--spacing-48);
-  align-items: end;
-}
-.page-hero__left { display: flex; flex-direction: column; gap: var(--spacing-20); align-items: flex-start; }
-.page-hero__right { display: flex; flex-direction: column; gap: var(--spacing-20); padding-bottom: 6px; }
 
 /* ---------- About ---------- */
 .about__grid {
@@ -1026,9 +1011,7 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
    Responsive
    ============================================================ */
 @media (max-width: 1024px) {
-  .page-hero__grid, .sec-head { grid-template-columns: 1fr; }
-  .sec-head { align-items: start; }
-  .page-hero__right { padding-bottom: 0; }
+  .sec-head { grid-template-columns: 1fr; align-items: start; }
   .grid-4, .cats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .carousel__track > * { flex-basis: calc((100% - var(--spacing-20)) / 2); }
