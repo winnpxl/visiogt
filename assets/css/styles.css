@@ -703,14 +703,14 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 /* ============================================================
    Stats
    ============================================================ */
-.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-20); }
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-20); }
 .stat {
   padding: var(--spacing-36) var(--spacing-20);
   border-left: 1px solid rgba(0, 31, 31, 0.12);
   padding-left: var(--spacing-20);
 }
 .stat__num {
-  font-size: var(--text-heading);
+  font-size: clamp(32px, 7vw, var(--text-heading));
   font-weight: var(--font-weight-medium);
   letter-spacing: -0.024em;
   line-height: 1;
@@ -950,6 +950,23 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 .page-hero__left { display: flex; flex-direction: column; gap: var(--spacing-20); align-items: flex-start; }
 .page-hero__right { display: flex; flex-direction: column; gap: var(--spacing-20); padding-bottom: 6px; }
 
+/* ---------- About ---------- */
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.28fr) minmax(0, 0.72fr);
+  gap: var(--spacing-48);
+}
+.about__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-36);
+}
+.about__body > p { max-width: 68ch; }
+.about__body .btn-row { margin-top: var(--spacing-12); }
+/* width:100% because a grid child of a flex-start column shrinks to its content. */
+.about__stats { width: 100%; margin-top: var(--spacing-36); }
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -1012,7 +1029,7 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
   .page-hero__grid, .sec-head { grid-template-columns: 1fr; }
   .sec-head { align-items: start; }
   .page-hero__right { padding-bottom: 0; }
-  .grid-4, .cats, .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-4, .cats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .carousel__track > * { flex-basis: calc((100% - var(--spacing-20)) / 2); }
   .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1026,12 +1043,13 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
   .nav__cta { display: none; }
   .split { grid-template-columns: 1fr; }
   .split--flip .split__media { order: -1; }
+  .about__grid { grid-template-columns: 1fr; gap: var(--spacing-36); }
   .section { padding: var(--spacing-72) 0; }
   .stage__float { display: none; }
 }
 
 @media (max-width: 640px) {
-  .grid-2, .grid-3, .grid-4, .cats, .stats { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4, .cats { grid-template-columns: 1fr; }
   .carousel__track > * { flex-basis: 86%; }
   .footer__grid { grid-template-columns: 1fr; }
   .announce__close { display: none; }
@@ -1045,7 +1063,8 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
   }
   .announce__divider { display: none; }
   .announce__link { white-space: nowrap; }
-  .stat { border-left: 0; border-top: 1px solid rgba(0, 31, 31, 0.12); padding: var(--spacing-20) 0; }
+  /* Two columns still, so the rules stay vertical — just tighten the box. */
+  .stat { padding: var(--spacing-20) var(--spacing-12); }
   .btn-row .btn { flex: 1 1 auto; justify-content: center; }
 }
 
