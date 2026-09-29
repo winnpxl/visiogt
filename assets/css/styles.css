@@ -317,36 +317,56 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
    Announcement banner
    ============================================================ */
 .announce {
-  background: var(--color-mint-surface);
-  color: var(--color-forest-ink);
+  position: relative;
+  overflow: hidden;
+  background: var(--color-brand);
+  color: var(--color-paper-white);
   font-size: 13px;
-  border-bottom: 1px solid rgba(0, 31, 31, 0.07);
+  border-bottom: 1px solid rgba(0, 31, 31, 0.12);
 }
+/* Sheen travels behind the content — .announce__inner carries the higher
+   stacking order so the text never washes out as the highlight passes. */
+.announce::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent 38%, rgba(255, 255, 255, 0.28) 50%, transparent 62%);
+  transform: translateX(-100%);
+  animation: announce-sheen 11s var(--ease-out) 2.5s infinite;
+}
+@keyframes announce-sheen { to { transform: translateX(100%); } }
+
 .announce__inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
   padding: 9px 24px;
   position: relative;
+  z-index: 1;
 }
-.announce__divider { width: 1px; height: 13px; background: rgba(0, 31, 31, 0.25); }
 .announce__link {
   font-weight: var(--font-weight-medium);
   display: inline-flex;
   gap: 6px;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 31, 31, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: border-color 0.3s var(--ease-out);
 }
+.announce__link:hover { border-color: var(--color-paper-white); }
+.announce__link span { transition: transform 0.3s var(--ease-out); }
+.announce__link:hover span { transform: translateX(3px); }
 .announce__close {
   position: absolute;
   right: 24px;
   background: none;
   border: 0;
+  color: inherit;
   cursor: pointer;
   line-height: 1;
   font-size: 15px;
-  opacity: 0.55;
+  opacity: 0.75;
   padding: 4px;
 }
 .announce__close:hover { opacity: 1; }
@@ -779,21 +799,47 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 /* ============================================================
    Categories
    ============================================================ */
-.cats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--spacing-12); }
-.cat {
-  border-radius: var(--radius-cards);
-  padding: var(--spacing-36) var(--spacing-20) var(--spacing-20);
-  border: 1px solid rgba(0, 31, 31, 0.1);
-  background: var(--color-paper-white);
+.cats__head {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-12);
-  transition: transform 0.45s var(--ease-out), background-color 0.4s ease;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-20);
+  margin-bottom: var(--spacing-48);
 }
-.cat:hover { transform: translateY(-4px); background: var(--color-sage-glow); }
-.cat__k { font-size: var(--text-caption); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-mist); }
-.cat__t { font-size: var(--text-subheading); font-weight: var(--font-weight-medium); letter-spacing: -0.01em; }
-.cat__d { font-size: var(--text-body-sm); color: var(--color-lichen-gray); line-height: 1.5; }
+.cats__head .subheading { max-width: 46ch; }
+
+.cats {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--spacing-12);
+}
+.cat {
+  border-radius: 18px;
+  padding: 14px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.45s var(--ease-out);
+}
+.cat:hover { transform: translateY(-6px); }
+.cat__art { flex: 1; display: block; }
+.cat__art img { width: 100%; height: auto; display: block; }
+.cat__t {
+  font-size: var(--text-body-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.01em;
+  padding-inline: 4px;
+}
+
+.cat--butter { background: var(--color-buttercream); }
+.cat--lavender { background: var(--color-lavender-surface); }
+.cat--sky { background: var(--color-mint-surface); }
+.cat--blush { background: var(--color-blush-surface); }
+/* The two saturated cards carry white labels — brand-action reaches 5.2:1 and
+   saffron 4.5:1, both past AA. The lighter --color-brand would not. */
+.cat--forest { background: var(--color-brand-action); color: var(--color-paper-white); }
+.cat--amber { background: var(--color-saffron); color: var(--color-paper-white); }
 
 /* ============================================================
    FAQ
@@ -1012,7 +1058,8 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
    ============================================================ */
 @media (max-width: 1024px) {
   .sec-head { grid-template-columns: 1fr; align-items: start; }
-  .grid-4, .cats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .carousel__track > * { flex-basis: calc((100% - var(--spacing-20)) / 2); }
   .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1032,7 +1079,8 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 }
 
 @media (max-width: 640px) {
-  .grid-2, .grid-3, .grid-4, .cats { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .cats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .carousel__track > * { flex-basis: 86%; }
   .footer__grid { grid-template-columns: 1fr; }
   .announce__close { display: none; }
@@ -1044,7 +1092,6 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
     padding: 9px 16px;
     text-align: center;
   }
-  .announce__divider { display: none; }
   .announce__link { white-space: nowrap; }
   /* Two columns still, so the rules stay vertical — just tighten the box. */
   .stat { padding: var(--spacing-20) var(--spacing-12); }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 190" role="img" aria-label="A browser layout being built beside a panel of code">
+  <rect x="6" y="14" width="146" height="104" rx="13" fill="#ffffff"/>
+  <circle cx="26" cy="33" r="5" fill="#e0836f"/>
+  <circle cx="42" cy="33" r="5" fill="#e9c96a"/>
+  <circle cx="58" cy="33" r="5" fill="#7fc98a"/>
+  <rect x="20" y="50" width="118" height="38" rx="9" fill="#f0d071"/>
+  <rect x="20" y="96" width="76" height="10" rx="5" fill="#001f1f" opacity="0.16"/>
+
+  <rect x="66" y="96" width="128" height="80" rx="13" fill="#15211f"/>
+  <rect x="82" y="116" width="34" height="10" rx="5" fill="#2ecfb3"/>
+  <rect x="122" y="116" width="54" height="10" rx="5" fill="#a893e8"/>
+  <rect x="82" y="136" width="70" height="10" rx="5" fill="#f0d071"/>
+  <rect x="82" y="156" width="46" height="10" rx="5" fill="#ef8ba6"/>
+</svg>

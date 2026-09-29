@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 190" role="img" aria-label="A code editor beside a terminal showing a passing build">
+  <rect x="6" y="16" width="146" height="102" rx="13" fill="#15211f"/>
+  <circle cx="26" cy="35" r="5" fill="#e0836f"/>
+  <circle cx="42" cy="35" r="5" fill="#e9c96a"/>
+  <circle cx="58" cy="35" r="5" fill="#7fc98a"/>
+  <rect x="20" y="54" width="34" height="10" rx="5" fill="#a893e8"/>
+  <rect x="60" y="54" width="56" height="10" rx="5" fill="#2ecfb3"/>
+  <rect x="30" y="74" width="68" height="10" rx="5" fill="#f0d071"/>
+  <rect x="104" y="74" width="26" height="10" rx="5" fill="#ef8ba6"/>
+  <rect x="30" y="94" width="48" height="10" rx="5" fill="#5f7d7a"/>
+
+  <rect x="64" y="110" width="130" height="72" rx="13" fill="#0a1211"/>
+  <rect x="80" y="130" width="60" height="9" rx="4.5" fill="#8ea8a4"/>
+  <path d="M80 158 L87 165 L100 150" stroke="#5fd39b" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="110" y="153" width="54" height="9" rx="4.5" fill="#5fd39b"/>
+</svg>
