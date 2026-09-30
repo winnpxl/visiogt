@@ -515,8 +515,8 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 .stage {
   position: relative;
   margin-top: var(--spacing-72);
-  padding: clamp(24px, 5vw, 64px) clamp(16px, 4vw, 56px);
-  border-radius: var(--radius-xl-card);
+  padding: 10px;
+  border-radius: 10px;
   overflow: hidden;
   isolation: isolate;
 }
@@ -534,39 +534,10 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
   100% { transform: translate3d(2%, -3%, 0) scale(1.06); }
 }
 .device {
-  background: var(--color-paper-white);
-  border-radius: var(--radius-lg-card);
-  padding: 10px;
-  box-shadow: var(--shadow-md-fallback);
-  box-shadow: var(--shadow-md);
+  border-radius: 10px;
+  overflow: hidden;
 }
-.device img { border-radius: 20px; width: 100%; }
-
-.stage__float {
-  position: absolute;
-  background: var(--color-paper-white);
-  border-radius: var(--radius-cards);
-  padding: 12px 16px;
-  box-shadow: var(--shadow-md-fallback);
-  box-shadow: var(--shadow-md);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  font-weight: var(--font-weight-medium);
-  animation: bob 6s ease-in-out infinite;
-}
-/* Sit in the halo band above and below the frame rather than over the device.
-   Each page shows a different mockup, so anything overlapping the screen
-   collided with real UI on at least one of them. */
-.stage__float--a { left: 3%; top: 12px; }
-.stage__float--b { right: 3%; bottom: 12px; animation-delay: -3s; }
-.stage__float .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--color-deep-forest); }
-.stage__float .dot--teal { background: var(--color-deep-teal); }
-@keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-9px); }
-}
+.device img { border-radius: 10px; width: 100%; }
 
 /* ============================================================
    Logo strip
@@ -637,15 +608,25 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 .pastel--petal { background: var(--color-petal); }
 
 .pastel__icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   display: grid;
   place-items: center;
-  background: rgba(0, 31, 31, 0.07);
   color: var(--color-forest-ink);
   flex: none;
 }
+.pastel__icon svg {
+  width: 29px;
+  height: 29px;
+  fill: currentColor;
+}
+/* Solid icons inherit a deep, high-contrast shade from their individual card tint. */
+.pastel--mint .pastel__icon { color: #0d5c63; }
+.pastel--lime .pastel__icon { color: #4a5918; }
+.pastel--lavender .pastel__icon { color: #4d4591; }
+.pastel--blush .pastel__icon { color: #8a397c; }
+.pastel--butter .pastel__icon { color: var(--color-saffron); }
+.pastel--sage .pastel__icon { color: var(--color-deep-forest); }
 .pastel__body { color: var(--color-lichen-gray); font-size: var(--text-body); line-height: 1.55; }
 .pastel__shot {
   margin-top: auto;
@@ -1017,11 +998,11 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 .checklist { display: flex; flex-direction: column; gap: var(--spacing-12); }
 .check { display: flex; gap: var(--spacing-12); align-items: flex-start; font-size: var(--text-body); }
 .check__mark {
-  width: 22px; height: 22px; border-radius: 50%;
-  background: var(--color-meadow);
-  border: 1px solid var(--color-forest-ink);
+  width: 22px; height: 22px;
+  color: var(--color-brand-action);
   display: grid; place-items: center; flex: none; margin-top: 2px;
 }
+.check__mark svg { width: 20px; height: 20px; fill: currentColor; }
 
 /* ============================================================
    Scroll reveal
@@ -1076,7 +1057,6 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
   .split--flip .split__media { order: -1; }
   .about__grid { grid-template-columns: 1fr; gap: var(--spacing-36); }
   .section { padding: var(--spacing-72) 0; }
-  .stage__float { display: none; }
 }
 
 @media (max-width: 640px) {
