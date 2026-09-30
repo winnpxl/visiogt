@@ -761,12 +761,13 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 .quote__name { font-size: var(--text-body); font-weight: var(--font-weight-medium); }
 .quote__role { font-size: var(--text-body-sm); color: var(--color-lichen-gray); }
 .quote__text { font-size: var(--text-body); line-height: 1.5; color: var(--color-forest-ink); }
+/* Pins the stat to the card floor so it lines up across cards whose quotes differ in length. */
+.quote__foot { margin-top: auto; }
 .quote__stat {
   font-size: var(--text-heading);
   font-weight: var(--font-weight-medium);
   letter-spacing: -0.024em;
   line-height: 1;
-  margin-top: auto;
 }
 .quote__stat-label { font-size: var(--text-body-sm); color: var(--color-lichen-gray); margin-top: 6px; }
 
