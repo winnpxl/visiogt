@@ -29,7 +29,7 @@ Then open <http://localhost:4321>.
 The site implements the **Lattice** style reference — a botanical field journal on warm
 parchment. All tokens live in `:root` at the top of `assets/css/styles.css`.
 
-- **Canvas** — Parchment `#f7f6f2`. Never pure white for the page background.
+- **Canvas** — White `#ffffff` for the page background.
 - **Structure** — Forest Ink `#001f1f` carries all primary text and structural borders.
 - **Brand** — the logo teal is `#21B79F` (`--color-brand`). Primary buttons use a deeper
   shade, `#157A69` (`--color-brand-action`), because white text on the lighter teal is only
@@ -37,9 +37,8 @@ parchment. All tokens live in `:root` at the top of `assets/css/styles.css`.
 - **Pastel taxonomy** — each content category keeps its own tint across every page:
   Mint = matching, Lime = managed delivery, Lavender = payments and testimonials,
   Blush = quality, Sage = clients, Buttercream = warm accents.
-- **Type** — **Plus Jakarta Sans** at 400/500 only, loaded from Google Fonts, with tight
-  tracking on display sizes and 0.08em tracking on 11px uppercase labels. A soft geometric
-  sans, openly licensed (SIL OFL), so every visitor sees the same face.
+- **Type** — **Google Sans** at 400/500, with tight tracking on display sizes and 0.08em
+  tracking on 11px uppercase labels.
 - **Rhythm** — every section opens badge → heading → description.
 
 ## Brand assets
