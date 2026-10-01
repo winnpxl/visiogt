@@ -1004,6 +1004,15 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 .leader-card__portrait { width: 96px; height: 96px; margin-bottom: var(--spacing-12); border-radius: 50%; box-shadow: var(--shadow-md-fallback); }
 .leader-card__role { color: var(--color-slate); font-size: var(--text-body-sm); margin-top: -6px; }
 .leader-card .body-sm { margin-top: auto; max-width: 44ch; }
+.leader-card--founder { min-height: 0; padding: 18px; gap: var(--spacing-12); background: #f6f7f9; }
+.leader-card--founder-dark { background: var(--color-deep-teal); color: #fff; }
+.leader-card--founder-dark .caption { color: var(--color-meadow); }
+.leader-card--founder-dark .leader-card__role, .leader-card--founder-dark .body-sm { color: rgba(255,255,255,.74); }
+.leader-card__photo { width: 100%; height: auto; aspect-ratio: 1.62 / 1; object-fit: cover; border-radius: calc(var(--radius-lg-card) - 10px); background: var(--color-mint-surface); box-shadow: none; }
+.leader-card--founder .body-sm { margin-top: var(--spacing-8); min-height: 108px; }
+.leader-card__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+.leader-card__tags span { padding: 8px 12px; border-radius: var(--radius-badges); background: rgba(0,31,31,.06); color: var(--color-plum); font-size: 12px; line-height: 1.25; }
+.leader-card--founder-dark .leader-card__tags span { background: rgba(255,255,255,.1); color: var(--color-meadow); }
 
 /* About page, refactored around an editorial origin → mission → leadership flow. */
 .about-hero--reference { padding-bottom: var(--spacing-116); }
