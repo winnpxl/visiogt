@@ -1102,6 +1102,9 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
    Responsive
    ============================================================ */
 @media (max-width: 1024px) {
+  .nav__links, .nav__login { display: none; }
+  .nav__burger { display: grid; }
+  .nav__cta { display: none; }
   .sec-head { grid-template-columns: 1fr; align-items: start; }
   .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -1113,9 +1116,6 @@ a.pill:hover .pill__spark { transform: rotate(90deg) scale(1.12); }
 }
 
 @media (max-width: 860px) {
-  .nav__links, .nav__login { display: none; }
-  .nav__burger { display: grid; }
-  .nav__cta { display: none; }
   .split { grid-template-columns: 1fr; }
   .split--flip .split__media { order: -1; }
   .about__grid { grid-template-columns: 1fr; gap: var(--spacing-36); }

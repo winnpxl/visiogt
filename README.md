@@ -4,7 +4,8 @@ Marketing site for **Visio** — a managed project delivery platform where vette
 professionals are matched to projects by AI, with a dedicated Project Manager overseeing
 delivery from brief to launch.
 
-Static HTML, CSS and vanilla JavaScript. No build step, no dependencies.
+Static HTML, CSS and vanilla JavaScript. No build step or npm dependencies.
+The optional Node preview server also collects waitlist signups locally.
 
 ## Pages
 
@@ -13,16 +14,46 @@ Static HTML, CSS and vanilla JavaScript. No build step, no dependencies.
 | `index.html` | Homepage — hero, about, how it works, platform, categories, stories, FAQ |
 | `clients.html` | For clients — what you get, the process, pricing, quality assurance |
 | `talent.html` | For talent — why join, verification, opportunities, earnings |
+| `about.html` | About Visio — origin, mission and leadership |
+| `waitlist.html` | Talent and client waitlists with an accessible button toggle |
 
 ## Running locally
 
-Any static file server works:
+With Node 20 or later:
 
 ```bash
-npx serve -l 4321 .
+npm run dev
 ```
 
-Then open <http://localhost:4321>.
+Then open <http://127.0.0.1:4321/waitlist.html>. No install step is needed.
+Use `PORT=4322 npm run dev` to choose another port.
+
+### Waitlist preview
+
+- `?audience=talent` and `?audience=client` link directly to the corresponding form.
+- The toggle supports arrow keys, Home/End, browser Back/Forward, and preserves
+  in-progress values in both forms. Form data is not stored in browser storage.
+- `ref`, `utm_source`, or `source` prefill the editable referral field. Campaign
+  parameters are retained with the signup, including links used in QR codes.
+- All form questions are required except a student's portfolio. Client budgets
+  accept an estimate in any currency or “let’s discuss”; the deck supplied no prices.
+- Successful submissions are appended to `.local/waitlist.jsonl`. Each line is
+  a JSON record with an ID, timestamp, audience, form answers, consent and attribution.
+  The file is ignored by Git and cannot be fetched through the preview server.
+- The server listens on loopback only. Success messages explicitly identify local
+  preview collection. No email or WhatsApp message is sent.
+- Run `npm test` for validation, persistence and private-file access checks.
+
+### Production signup integration
+
+This server is for local preview, not a production signup service. Before publishing,
+connect both forms' `/api/waitlist` action to a production endpoint. The browser sends
+JSON and only confirms success when the endpoint returns a successful HTTP status and
+`{"ok":true}`. The local server also returns `"preview":true`. Retain server-side
+validation and configure durable storage, abuse controls, privacy terms and the
+appropriate consent policy for the chosen service. Static hosting without that
+endpoint displays an error and retains the visitor's entries rather than claiming
+the signup was received.
 
 ## Design system
 
@@ -83,6 +114,7 @@ animations only arm once JS is running so a script failure can't leave the page 
 
 - The logo strip wordmarks (Kolaba, Northwind, Tenda Health, …) are invented placeholders.
 - Testimonials and the homepage stat figures are illustrative.
-- CTAs point at `mailto:` placeholders on the `visio.example` domain.
+- Signup CTAs lead to the waitlist. General contact links still use `mailto:`
+  placeholders on the `visio.example` domain.
 
 Each is marked with an HTML comment where it appears.
