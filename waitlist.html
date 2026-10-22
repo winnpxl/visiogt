@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css?v=waitlist-1">
-<link rel="stylesheet" href="assets/css/waitlist.css">
+<link rel="stylesheet" href="assets/css/waitlist.css?v=flat-panels-3">
 <script src="assets/js/main.js" defer></script>
-<script src="assets/js/waitlist.js" defer></script>
+<script src="assets/js/waitlist.js?v=dropdowns-2" defer></script>
 </head>
 <body class="waitlist-page">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -38,7 +38,7 @@
       <a class="nav__link is-active" href="waitlist.html" aria-current="page">Waitlist</a>
     </nav>
     <div class="nav__actions">
-      <a class="btn btn--filled nav__cta" href="#signup">Join the Waitlist <span class="arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn--filled nav__cta" href="#signup">Join the Waitlist</a>
       <button class="nav__burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
         <svg class="nav__burger-icon nav__burger-icon--menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="nav__burger-icon nav__burger-icon--close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m18 6-12 12M6 6l12 12"/></svg>
       </button>
@@ -54,10 +54,8 @@
 <main id="main">
   <section class="page-hero waitlist-hero">
     <div class="wrap hero__stack">
-      <span class="pill">The Visio waitlist <svg class="pill__spark" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0C6.3 3.3 8.7 5.7 12 6C8.7 6.3 6.3 8.7 6 12C5.7 8.7 3.3 6.3 0 6C3.3 5.7 5.7 3.3 6 0Z"/></svg></span>
       <h1 class="display">Vetted talent.<br><span>Managed delivery.</span></h1>
       <p class="subheading hero__sub">The platform that brings exceptional African talent and ambitious businesses together. Built around a finished outcome.</p>
-      <ul class="waitlist-values" aria-label="The Visio approach"><li>Speed</li><li>Managed delivery</li><li>Africa-first</li></ul>
     </div>
   </section>
 
@@ -66,8 +64,8 @@
       <div class="waitlist-switcher">
         <p class="caption">Your next chapter starts here</p>
         <div class="audience-tabs" role="tablist" aria-label="Choose your waitlist">
-          <button class="audience-tab" id="talent-tab" type="button" role="tab" aria-selected="true" aria-controls="talent-panel" data-audience="talent">I’m a Talent <span aria-hidden="true">↗</span></button>
-          <button class="audience-tab" id="client-tab" type="button" role="tab" aria-selected="false" aria-controls="client-panel" tabindex="-1" data-audience="client">I’m a Client <span aria-hidden="true">↗</span></button>
+          <button class="audience-tab" id="talent-tab" type="button" role="tab" aria-selected="true" aria-controls="talent-panel" data-audience="talent">I’m a Talent</button>
+          <button class="audience-tab" id="client-tab" type="button" role="tab" aria-selected="false" aria-controls="client-panel" tabindex="-1" data-audience="client">I’m a Client</button>
         </div>
       </div>
       <noscript><p class="waitlist-notice">Please enable JavaScript to switch waitlists and submit your signup.</p></noscript>
@@ -80,7 +78,7 @@
           <div class="waitlist-story__art" aria-hidden="true"><img src="assets/img/network.svg" alt="" width="640" height="460"></div>
           <div class="waitlist-benefit"><span aria-hidden="true">01</span><div><h3 class="heading-sm">Real work. Room to grow.</h3><p class="body-sm">Bring your craft to paid projects and build experience that travels.</p></div></div>
           <div class="waitlist-benefit"><span aria-hidden="true">02</span><div><h3 class="heading-sm">Focus on what you do best.</h3><p class="body-sm">We handle the coordination, so you can focus on delivering great work.</p></div></div>
-          <a class="link-arrow" href="talent.html">Get to know the talent network <span aria-hidden="true">→</span></a>
+          <a class="link-arrow" href="talent.html">Get to know the talent network</a>
         </aside>
         <div class="waitlist-form-card">
           <div class="waitlist-form-heading"><span class="caption">Talent waitlist</span><h2 class="heading-sm">Let’s make room for your talent.</h2><p class="body-sm">Tell us a little about you and the work you love doing.</p></div>
@@ -91,7 +89,8 @@
                 <div class="form-field form-field--full"><label for="talent-name">Full name</label><input id="talent-name" name="fullName" autocomplete="name" placeholder="Your full name" maxlength="120" required></div>
                 <div class="form-field"><label for="talent-email">Email address</label><input id="talent-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required></div>
                 <div class="form-field"><label for="talent-phone">WhatsApp number</label><input id="talent-phone" name="phone" type="tel" autocomplete="tel" placeholder="+234 801 234 5678" maxlength="30" aria-describedby="phone-hint" required><span class="field-hint" id="phone-hint">Include your country code.</span></div>
-                <div class="form-field form-field--full"><label for="talent-location">Where are you based?</label><input id="talent-location" name="location" list="locations" autocomplete="address-level2" placeholder="Select or type your city" maxlength="120" required><datalist id="locations"><option value="Lagos"><option value="Abuja"><option value="Port Harcourt"><option value="Ibadan"></datalist></div>
+                <div class="form-field form-field--full"><label for="talent-location">Where are you based?</label><select id="talent-location" name="location" autocomplete="address-level2" data-other-input="talent-location-other" required><option value="">Select your city</option><option>Lagos</option><option>Abuja</option><option>Port Harcourt</option><option>Ibadan</option><option value="other">Other city</option></select></div>
+                <div class="form-field form-field--full" hidden><label for="talent-location-other">Your city</label><input id="talent-location-other" name="locationOther" autocomplete="address-level2" placeholder="Enter your city" maxlength="120" disabled></div>
               </div>
             </fieldset>
             <fieldset><legend><span>02</span> Your craft</legend>
@@ -102,10 +101,11 @@
                 <div class="form-field form-field--full"><label for="talent-portfolio">Portfolio link <span class="field-optional" id="portfolio-label">Optional for students</span></label><input id="talent-portfolio" name="portfolio" type="url" placeholder="https://github.com/yourname" maxlength="500" aria-describedby="portfolio-hint"><span class="field-hint" id="portfolio-hint">Your GitHub, Behance, or personal website.</span></div>
               </div>
             </fieldset>
-            <div class="form-field"><label for="talent-source">How did you hear about us?</label><input id="talent-source" name="source" list="sources" placeholder="Select or tell us where" maxlength="200" required></div>
+            <div class="form-field"><label for="talent-source">How did you hear about us?</label><select id="talent-source" name="source" data-other-input="talent-source-other" required><option value="">Select a source</option><option>LinkedIn</option><option>Instagram</option><option>X / Twitter</option><option>WhatsApp</option><option>A friend or colleague</option><option>Campus community</option><option>An event</option><option>Search</option><option value="other">Other</option></select></div>
+            <div class="form-field" hidden><label for="talent-source-other">Tell us where</label><input id="talent-source-other" name="sourceOther" placeholder="Where did you discover Visio?" maxlength="200" disabled></div>
             <label class="form-consent" for="talent-consent"><input id="talent-consent" type="checkbox" name="consent" required><span>I agree to be contacted by Visio about the talent network and matched with relevant opportunities.</span></label>
             <p class="form-feedback" role="alert" hidden></p>
-            <button class="btn btn--filled form-submit" type="submit">Join the Talent Waitlist <span class="arrow" aria-hidden="true">→</span></button>
+            <button class="btn btn--filled form-submit" type="submit">Join the Talent Waitlist</button>
             <p class="form-note">A first step towards your next opportunity.</p>
           </form>
           <div class="form-success" tabindex="-1" hidden><span class="success-mark" aria-hidden="true">✓</span><p class="caption">Talent waitlist</p><h2 class="heading">You’re on the list.</h2><p class="body" data-success-message></p><a class="btn btn--outlined" href="talent.html">Explore the talent network <span aria-hidden="true">→</span></a></div>
@@ -120,7 +120,7 @@
           <div class="waitlist-offer"><span class="waitlist-offer__number">5%<span>off</span></span><div><h3 class="heading-sm">Your first project.</h3><p class="body-sm">A head start for clients who join the waitlist.</p></div></div>
           <div class="waitlist-benefit"><span aria-hidden="true">01</span><div><h3 class="heading-sm">The right people for your idea.</h3><p class="body-sm">Vetted African professionals matched to what you need built.</p></div></div>
           <div class="waitlist-benefit"><span aria-hidden="true">02</span><div><h3 class="heading-sm">An outcome, managed.</h3><p class="body-sm">A dedicated project manager keeps the work moving from brief to delivery.</p></div></div>
-          <a class="link-arrow" href="clients.html">See how Visio works for you <span aria-hidden="true">→</span></a>
+          <a class="link-arrow" href="clients.html">See how Visio works for you</a>
         </aside>
         <div class="waitlist-form-card">
           <div class="waitlist-form-heading"><span class="caption">Client waitlist</span><h2 class="heading-sm">What are you ready to build?</h2><p class="body-sm">Tell us about your business. We’ll take it from there.</p></div>
@@ -140,17 +140,16 @@
                 <div class="form-field form-field--full"><label for="client-timeline">When do you need to start?</label><select id="client-timeline" name="timeline" required><option value="">Select a timeline</option><option>Immediately</option><option>Within a month</option><option>Exploring</option></select></div>
               </div>
             </fieldset>
-            <div class="form-field"><label for="client-source">How did you hear about us?</label><input id="client-source" name="source" list="sources" placeholder="Select or tell us where" maxlength="200" required></div>
+            <div class="form-field"><label for="client-source">How did you hear about us?</label><select id="client-source" name="source" data-other-input="client-source-other" required><option value="">Select a source</option><option>LinkedIn</option><option>Instagram</option><option>X / Twitter</option><option>WhatsApp</option><option>A friend or colleague</option><option>Campus community</option><option>An event</option><option>Search</option><option value="other">Other</option></select></div>
+            <div class="form-field" hidden><label for="client-source-other">Tell us where</label><input id="client-source-other" name="sourceOther" placeholder="Where did you discover Visio?" maxlength="200" disabled></div>
             <label class="form-consent" for="client-consent"><input id="client-consent" type="checkbox" name="consent" required><span>I agree to be contacted by Visio about my project and the client waitlist.</span></label>
             <p class="form-feedback" role="alert" hidden></p>
-            <button class="btn btn--filled form-submit" type="submit">Reserve My Priority Match <span class="arrow" aria-hidden="true">→</span></button>
+            <button class="btn btn--filled form-submit" type="submit">Reserve My Priority Match</button>
             <p class="form-note">Join the waitlist. Get 5% off your first project.</p>
           </form>
           <div class="form-success" tabindex="-1" hidden><span class="success-mark" aria-hidden="true">✓</span><p class="caption">Client waitlist</p><h2 class="heading">Your next build starts here.</h2><p class="body" data-success-message></p><a class="btn btn--outlined" href="clients.html">Explore managed delivery <span aria-hidden="true">→</span></a></div>
         </div>
       </div>
-      <datalist id="sources"><option value="LinkedIn"><option value="Instagram"><option value="X / Twitter"><option value="WhatsApp"><option value="A friend or colleague"><option value="Campus community"><option value="An event"><option value="Search"><option value="Other"></datalist>
-      <div class="waitlist-after"><span class="pill pill--quiet">What comes next?</span><p>We’ll review your details and get in touch about the next steps for your chosen waitlist.</p><span class="waitlist-after__signature">Built in Africa.<br>Made for what’s next.</span></div>
     </div>
   </section>
 </main>

@@ -3,7 +3,7 @@
 
   var tabs = Array.from(document.querySelectorAll('[data-audience][role="tab"]'));
   var params = new URLSearchParams(window.location.search);
-  var source = params.get('ref') || params.get('utm_source') || params.get('source') || '';
+  var source = (params.get('ref') || params.get('utm_source') || params.get('source') || '').trim();
   var attribution = {};
   ['ref', 'source', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (key) {
     if (params.has(key)) attribution[key] = params.get(key).slice(0, 200);
@@ -88,6 +88,7 @@
     var invalid = [];
     form.querySelectorAll('input:not([type="hidden"]), select').forEach(function (input) {
       clearError(input);
+      if (input.disabled) return;
       if (input.type !== 'checkbox') input.value = input.value.trim();
       if (input.name === 'email' && input.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
         input.setCustomValidity('Enter a valid email address, for example you@example.com.');
@@ -114,7 +115,25 @@
 
   document.querySelectorAll('.waitlist-form').forEach(function (form) {
     form.noValidate = true;
-    if (source) form.elements.source.value = source.slice(0, 200);
+    if (source) {
+      var matchedSource = Array.from(form.elements.source.options).find(function (option) {
+        return option.value !== 'other' && option.value.toLowerCase() === source.toLowerCase();
+      });
+      form.elements.source.value = matchedSource ? matchedSource.value : 'other';
+      if (!matchedSource) form.elements.sourceOther.value = source.slice(0, 200);
+    }
+    form.querySelectorAll('select[data-other-input]').forEach(function (select) {
+      var other = document.getElementById(select.dataset.otherInput);
+      function updateOther() {
+        var visible = select.value === 'other';
+        other.closest('.form-field').hidden = !visible;
+        other.disabled = !visible;
+        other.required = visible;
+        clearError(other);
+      }
+      select.addEventListener('change', updateOther);
+      updateOther();
+    });
     form.addEventListener('input', function (event) { if (event.target.id) clearError(event.target); });
     form.addEventListener('change', function (event) { if (event.target.id) clearError(event.target); });
     form.addEventListener('submit', async function (event) {
@@ -126,6 +145,11 @@
       if (!validate(form)) return;
 
       var payload = Object.fromEntries(new FormData(form));
+      form.querySelectorAll('select[data-other-input]').forEach(function (select) {
+        var other = document.getElementById(select.dataset.otherInput);
+        if (select.value === 'other') payload[select.name] = other.value.trim();
+        delete payload[other.name];
+      });
       payload.consent = form.elements.consent.checked;
       payload.attribution = attribution;
       var originalLabel = button.innerHTML;

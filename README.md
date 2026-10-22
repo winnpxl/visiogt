@@ -35,6 +35,8 @@ Use `PORT=4322 npm run dev` to choose another port.
   in-progress values in both forms. Form data is not stored in browser storage.
 - `ref`, `utm_source`, or `source` prefill the editable referral field. Campaign
   parameters are retained with the signup, including links used in QR codes.
+- City and referral dropdowns offer an “Other” option for custom answers. Unknown
+  referral codes prefill that custom field; submissions retain the original value.
 - All form questions are required except a student's portfolio. Client budgets
   accept an estimate in any currency or “let’s discuss”; the deck supplied no prices.
 - Successful submissions are appended to `.local/waitlist.jsonl`. Each line is
